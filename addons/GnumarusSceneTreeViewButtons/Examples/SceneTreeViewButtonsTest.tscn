@@ -1,0 +1,1936 @@
+[gd_scene format=3 uid="uid://bgohfubetfsfa"]
+
+[node name="Node2D" type="Node2D"]
+visible = false
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+
+[node name="AcceptDialogDESCRIPTION" type="AcceptDialog" parent="."]
+editor_description = "@AcceptDialog@35:<AcceptDialog#160138529863>"
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+visible = false
+
+[node name="AnimatableBody2DDESCRIPTION" type="AnimatableBody2D" parent="."]
+editor_description = "@AnimatableBody2D@37:<AnimatableBody2D#160457296986>"
+visible = false
+
+[node name="AnimatableBody3D" type="AnimatableBody3D" parent="."]
+visible = false
+
+[node name="AnimatableBody3DDESCRIPTION" type="AnimatableBody3D" parent="."]
+editor_description = "@AnimatableBody3D@39:<AnimatableBody3D#160507628637>"
+visible = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+
+[node name="AnimatedSprite2DDESCRIPTION" type="AnimatedSprite2D" parent="."]
+editor_description = "@AnimatedSprite2D@41:<AnimatedSprite2D#160557960288>"
+visible = false
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+visible = false
+
+[node name="AnimatedSprite3DDESCRIPTION" type="AnimatedSprite3D" parent="."]
+editor_description = "@AnimatedSprite3D@43:<AnimatedSprite3D#160608291939>"
+visible = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AnimationPlayerDESCRIPTION" type="AnimationPlayer" parent="."]
+editor_description = "@AnimationPlayer@45:<AnimationPlayer#160658623590>"
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+
+[node name="AnimationTreeDESCRIPTION" type="AnimationTree" parent="."]
+editor_description = "@AnimationTree@47:<AnimationTree#160708955241>"
+
+[node name="Area2D" type="Area2D" parent="."]
+visible = false
+
+[node name="Area2DDESCRIPTION" type="Area2D" parent="."]
+editor_description = "@Area2D@49:<Area2D#160759286892>"
+visible = false
+
+[node name="Area3D" type="Area3D" parent="."]
+visible = false
+
+[node name="Area3DDESCRIPTION" type="Area3D" parent="."]
+editor_description = "@Area3D@51:<Area3D#160809618543>"
+visible = false
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+visible = false
+
+[node name="AspectRatioContainerDESCRIPTION" type="AspectRatioContainer" parent="."]
+editor_description = "@AspectRatioContainer@53:<AspectRatioContainer#160893504628>"
+visible = false
+
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+visible = false
+
+[node name="AudioListener2DDESCRIPTION" type="AudioListener2D" parent="."]
+editor_description = "@AudioListener2D@55:<AudioListener2D#160960613496>"
+visible = false
+
+[node name="AudioListener3D" type="AudioListener3D" parent="."]
+visible = false
+
+[node name="AudioListener3DDESCRIPTION" type="AudioListener3D" parent="."]
+editor_description = "@AudioListener3D@57:<AudioListener3D#161010945147>"
+visible = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="AudioStreamPlayerDESCRIPTION" type="AudioStreamPlayer" parent="."]
+editor_description = "@AudioStreamPlayer@59:<AudioStreamPlayer#161061276798>"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+visible = false
+
+[node name="AudioStreamPlayer2DDESCRIPTION" type="AudioStreamPlayer2D" parent="."]
+editor_description = "@AudioStreamPlayer2D@61:<AudioStreamPlayer2D#161111608449>"
+visible = false
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+visible = false
+
+[node name="AudioStreamPlayer3DDESCRIPTION" type="AudioStreamPlayer3D" parent="."]
+editor_description = "@AudioStreamPlayer3D@63:<AudioStreamPlayer3D#161195494534>"
+visible = false
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="."]
+visible = false
+
+[node name="BackBufferCopyDESCRIPTION" type="BackBufferCopy" parent="."]
+editor_description = "@BackBufferCopy@65:<BackBufferCopy#161262603402>"
+visible = false
+
+[node name="BaseButton" type="BaseButton" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+editor_description = ""
+visible = false
+modulate = Color(1, 1, 1, 1)
+self_modulate = Color(1, 1, 1, 1)
+show_behind_parent = false
+top_level = false
+clip_children = 0
+light_mask = 1
+visibility_layer = 1
+z_index = 0
+z_as_relative = true
+y_sort_enabled = false
+texture_filter = 0
+texture_repeat = 0
+material = null
+use_parent_material = false
+clip_contents = false
+custom_minimum_size = Vector2(0, 0)
+layout_direction = 0
+layout_mode = 3
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+rotation = 0.0
+scale = Vector2(1, 1)
+pivot_offset = Vector2(0, 0)
+size_flags_horizontal = 1
+size_flags_vertical = 1
+size_flags_stretch_ratio = 1.0
+auto_translate = true
+localize_numeral_system = true
+tooltip_text = ""
+focus_neighbor_left = NodePath("")
+focus_neighbor_top = NodePath("")
+focus_neighbor_right = NodePath("")
+focus_neighbor_bottom = NodePath("")
+focus_next = NodePath("")
+focus_previous = NodePath("")
+focus_mode = 2
+mouse_filter = 0
+mouse_force_pass_scroll_events = true
+mouse_default_cursor_shape = 0
+theme = null
+theme_type_variation = &""
+disabled = false
+toggle_mode = false
+button_pressed = false
+action_mode = 1
+button_mask = 1
+keep_pressed_outside = false
+button_group = null
+shortcut = null
+shortcut_feedback = true
+shortcut_in_tooltip = true
+script = null
+
+[node name="BaseButtonDESCRIPTION" type="BaseButton" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+editor_description = "@BaseButton@67:<BaseButton#161346489487>"
+visible = false
+modulate = Color(1, 1, 1, 1)
+self_modulate = Color(1, 1, 1, 1)
+show_behind_parent = false
+top_level = false
+clip_children = 0
+light_mask = 1
+visibility_layer = 1
+z_index = 0
+z_as_relative = true
+y_sort_enabled = false
+texture_filter = 0
+texture_repeat = 0
+material = null
+use_parent_material = false
+clip_contents = false
+custom_minimum_size = Vector2(0, 0)
+layout_direction = 0
+layout_mode = 3
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+rotation = 0.0
+scale = Vector2(1, 1)
+pivot_offset = Vector2(0, 0)
+size_flags_horizontal = 1
+size_flags_vertical = 1
+size_flags_stretch_ratio = 1.0
+auto_translate = true
+localize_numeral_system = true
+tooltip_text = ""
+focus_neighbor_left = NodePath("")
+focus_neighbor_top = NodePath("")
+focus_neighbor_right = NodePath("")
+focus_neighbor_bottom = NodePath("")
+focus_next = NodePath("")
+focus_previous = NodePath("")
+focus_mode = 2
+mouse_filter = 0
+mouse_force_pass_scroll_events = true
+mouse_default_cursor_shape = 0
+theme = null
+theme_type_variation = &""
+disabled = false
+toggle_mode = false
+button_pressed = false
+action_mode = 1
+button_mask = 1
+keep_pressed_outside = false
+button_group = null
+shortcut = null
+shortcut_feedback = true
+shortcut_in_tooltip = true
+script = null
+
+[node name="Bone2D" type="Bone2D" parent="."]
+visible = false
+
+[node name="Bone2DDESCRIPTION" type="Bone2D" parent="."]
+editor_description = "@Bone2D@69:<Bone2D#161413598355>"
+visible = false
+
+[node name="BoneAttachment3D" type="BoneAttachment3D" parent="."]
+visible = false
+
+[node name="BoneAttachment3DDESCRIPTION" type="BoneAttachment3D" parent="."]
+editor_description = "@BoneAttachment3D@71:<BoneAttachment3D#161463930006>"
+visible = false
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+visible = false
+
+[node name="BoxContainerDESCRIPTION" type="BoxContainer" parent="."]
+editor_description = "@BoxContainer@73:<BoxContainer#161547816091>"
+visible = false
+
+[node name="Button" type="Button" parent="."]
+visible = false
+
+[node name="ButtonDESCRIPTION" type="Button" parent="."]
+editor_description = "@Button@75:<Button#161682033827>"
+visible = false
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+visible = false
+
+[node name="CPUParticles2DDESCRIPTION" type="CPUParticles2D" parent="."]
+editor_description = "@CPUParticles2D@77:<CPUParticles2D#161765919912>"
+visible = false
+
+[node name="CPUParticles3D" type="CPUParticles3D" parent="."]
+visible = false
+
+[node name="CPUParticles3DDESCRIPTION" type="CPUParticles3D" parent="."]
+editor_description = "@CPUParticles3D@79:<CPUParticles3D#161816251563>"
+visible = false
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+visible = false
+
+[node name="CSGBox3DDESCRIPTION" type="CSGBox3D" parent="."]
+editor_description = "@CSGBox3D@81:<CSGBox3D#161866583214>"
+visible = false
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+visible = false
+
+[node name="CSGCombiner3DDESCRIPTION" type="CSGCombiner3D" parent="."]
+editor_description = "@CSGCombiner3D@83:<CSGCombiner3D#161916914865>"
+visible = false
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+visible = false
+
+[node name="CSGCylinder3DDESCRIPTION" type="CSGCylinder3D" parent="."]
+editor_description = "@CSGCylinder3D@85:<CSGCylinder3D#161967246516>"
+visible = false
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+visible = false
+
+[node name="CSGMesh3DDESCRIPTION" type="CSGMesh3D" parent="."]
+editor_description = "@CSGMesh3D@87:<CSGMesh3D#162017578167>"
+visible = false
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="."]
+visible = false
+
+[node name="CSGPolygon3DDESCRIPTION" type="CSGPolygon3D" parent="."]
+editor_description = "@CSGPolygon3D@89:<CSGPolygon3D#162067909818>"
+visible = false
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+visible = false
+
+[node name="CSGSphere3DDESCRIPTION" type="CSGSphere3D" parent="."]
+editor_description = "@CSGSphere3D@91:<CSGSphere3D#162118241469>"
+visible = false
+
+[node name="CSGTorus3D" type="CSGTorus3D" parent="."]
+visible = false
+
+[node name="CSGTorus3DDESCRIPTION" type="CSGTorus3D" parent="."]
+editor_description = "@CSGTorus3D@93:<CSGTorus3D#162168573120>"
+visible = false
+
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+
+[node name="Camera2DDESCRIPTION" type="Camera2D" parent="."]
+editor_description = "@Camera2D@95:<Camera2D#162218904771>"
+visible = false
+
+[node name="Camera3D" type="Camera3D" parent="."]
+visible = false
+
+[node name="Camera3DDESCRIPTION" type="Camera3D" parent="."]
+editor_description = "@Camera3D@97:<Camera3D#162302790856>"
+visible = false
+
+[node name="CanvasGroup" type="CanvasGroup" parent="."]
+visible = false
+
+[node name="CanvasGroupDESCRIPTION" type="CanvasGroup" parent="."]
+editor_description = "@CanvasGroup@99:<CanvasGroup#162369899724>"
+visible = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="CanvasLayerDESCRIPTION" type="CanvasLayer" parent="."]
+editor_description = "@CanvasLayer@101:<CanvasLayer#162420231375>"
+visible = false
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
+
+[node name="CanvasModulateDESCRIPTION" type="CanvasModulate" parent="."]
+editor_description = "@CanvasModulate@103:<CanvasModulate#162470563026>"
+visible = false
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+visible = false
+
+[node name="CenterContainerDESCRIPTION" type="CenterContainer" parent="."]
+editor_description = "@CenterContainer@105:<CenterContainer#162554449111>"
+visible = false
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+visible = false
+
+[node name="CharacterBody2DDESCRIPTION" type="CharacterBody2D" parent="."]
+editor_description = "@CharacterBody2D@107:<CharacterBody2D#162621557979>"
+visible = false
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+visible = false
+
+[node name="CharacterBody3DDESCRIPTION" type="CharacterBody3D" parent="."]
+editor_description = "@CharacterBody3D@109:<CharacterBody3D#162671889630>"
+visible = false
+
+[node name="CheckBox" type="CheckBox" parent="."]
+visible = false
+
+[node name="CheckBoxDESCRIPTION" type="CheckBox" parent="."]
+editor_description = "@CheckBox@111:<CheckBox#162789330149>"
+visible = false
+
+[node name="CheckButton" type="CheckButton" parent="."]
+visible = false
+
+[node name="CheckButtonDESCRIPTION" type="CheckButton" parent="."]
+editor_description = "@CheckButton@113:<CheckButton#162940325102>"
+visible = false
+
+[node name="CodeEdit" type="CodeEdit" parent="."]
+visible = false
+
+[node name="CodeEditDESCRIPTION" type="CodeEdit" parent="."]
+editor_description = "@CodeEdit@130:<CodeEdit#163393309959>"
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+
+[node name="CollisionPolygon2DDESCRIPTION" type="CollisionPolygon2D" parent="."]
+editor_description = "@CollisionPolygon2D@132:<CollisionPolygon2D#163628190996>"
+visible = false
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="."]
+visible = false
+
+[node name="CollisionPolygon3DDESCRIPTION" type="CollisionPolygon3D" parent="."]
+editor_description = "@CollisionPolygon3D@134:<CollisionPolygon3D#163678522647>"
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+
+[node name="CollisionShape2DDESCRIPTION" type="CollisionShape2D" parent="."]
+editor_description = "@CollisionShape2D@136:<CollisionShape2D#163728854298>"
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+visible = false
+
+[node name="CollisionShape3DDESCRIPTION" type="CollisionShape3D" parent="."]
+editor_description = "@CollisionShape3D@138:<CollisionShape3D#163779185949>"
+visible = false
+
+[node name="ColorPicker" type="ColorPicker" parent="."]
+visible = false
+
+[node name="ColorPickerDESCRIPTION" type="ColorPicker" parent="."]
+editor_description = "@ColorPicker@341:<ColorPicker#170305523322>"
+visible = false
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="."]
+visible = false
+
+[node name="ColorPickerButtonDESCRIPTION" type="ColorPickerButton" parent="."]
+editor_description = "@ColorPickerButton@343:<ColorPickerButton#173660966702>"
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+
+[node name="ColorRectDESCRIPTION" type="ColorRect" parent="."]
+editor_description = "@ColorRect@345:<ColorRect#173778407221>"
+visible = false
+
+[node name="ConeTwistJoint3D" type="ConeTwistJoint3D" parent="."]
+visible = false
+
+[node name="ConeTwistJoint3DDESCRIPTION" type="ConeTwistJoint3D" parent="."]
+editor_description = "@ConeTwistJoint3D@347:<ConeTwistJoint3D#173845516089>"
+visible = false
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]
+
+[node name="ConfirmationDialogDESCRIPTION" type="ConfirmationDialog" parent="."]
+editor_description = "@ConfirmationDialog@373:<ConfirmationDialog#174600490854>"
+
+[node name="Container" type="Container" parent="."]
+visible = false
+
+[node name="ContainerDESCRIPTION" type="Container" parent="."]
+editor_description = "@Container@375:<Container#175036698496>"
+visible = false
+
+[node name="Control" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+
+[node name="ControlDESCRIPTION" type="Control" parent="."]
+editor_description = "@Control@377:<Control#175137361798>"
+visible = false
+layout_mode = 3
+anchors_preset = 0
+
+[node name="DampedSpringJoint2D" type="DampedSpringJoint2D" parent="."]
+visible = false
+
+[node name="DampedSpringJoint2DDESCRIPTION" type="DampedSpringJoint2D" parent="."]
+editor_description = "@DampedSpringJoint2D@379:<DampedSpringJoint2D#175204470666>"
+visible = false
+
+[node name="Decal" type="Decal" parent="."]
+visible = false
+
+[node name="DecalDESCRIPTION" type="Decal" parent="."]
+editor_description = "@Decal@381:<Decal#175254802317>"
+visible = false
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+visible = false
+
+[node name="DirectionalLight2DDESCRIPTION" type="DirectionalLight2D" parent="."]
+editor_description = "@DirectionalLight2D@383:<DirectionalLight2D#175305133968>"
+visible = false
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+visible = false
+
+[node name="DirectionalLight3DDESCRIPTION" type="DirectionalLight3D" parent="."]
+editor_description = "@DirectionalLight3D@385:<DirectionalLight3D#175355465619>"
+visible = false
+
+[node name="FileDialog" type="FileDialog" parent="."]
+
+[node name="FileDialogDESCRIPTION" type="FileDialog" parent="."]
+editor_description = "@FileDialog@669:<FileDialog#183391752557>"
+
+[node name="FlowContainer" type="FlowContainer" parent="."]
+visible = false
+
+[node name="FlowContainerDESCRIPTION" type="FlowContainer" parent="."]
+editor_description = "@FlowContainer@671:<FlowContainer#187468616284>"
+visible = false
+
+[node name="FogVolume" type="FogVolume" parent="."]
+visible = false
+
+[node name="FogVolumeDESCRIPTION" type="FogVolume" parent="."]
+editor_description = "@FogVolume@673:<FogVolume#187535725152>"
+visible = false
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+visible = false
+
+[node name="GPUParticles2DDESCRIPTION" type="GPUParticles2D" parent="."]
+editor_description = "@GPUParticles2D@675:<GPUParticles2D#187586056803>"
+visible = false
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+visible = false
+
+[node name="GPUParticles3DDESCRIPTION" type="GPUParticles3D" parent="."]
+editor_description = "@GPUParticles3D@677:<GPUParticles3D#187636388454>"
+visible = false
+
+[node name="GPUParticlesAttractorBox3D" type="GPUParticlesAttractorBox3D" parent="."]
+visible = false
+
+[node name="GPUParticlesAttractorBox3DDESCRIPTION" type="GPUParticlesAttractorBox3D" parent="."]
+editor_description = "@GPUParticlesAttractorBox3D@679:<GPUParticlesAttractorBox3D#187686720105>"
+visible = false
+
+[node name="GPUParticlesAttractorSphere3D" type="GPUParticlesAttractorSphere3D" parent="."]
+visible = false
+
+[node name="GPUParticlesAttractorSphere3DDESCRIPTION" type="GPUParticlesAttractorSphere3D" parent="."]
+editor_description = "@GPUParticlesAttractorSphere3D@681:<GPUParticlesAttractorSphere3D#187737051756>"
+visible = false
+
+[node name="GPUParticlesAttractorVectorField3D" type="GPUParticlesAttractorVectorField3D" parent="."]
+visible = false
+
+[node name="GPUParticlesAttractorVectorField3DDESCRIPTION" type="GPUParticlesAttractorVectorField3D" parent="."]
+editor_description = "@GPUParticlesAttractorVectorField3D@683:<GPUParticlesAttractorVectorField3D#187787383407>"
+visible = false
+
+[node name="GPUParticlesCollisionBox3D" type="GPUParticlesCollisionBox3D" parent="."]
+visible = false
+
+[node name="GPUParticlesCollisionBox3DDESCRIPTION" type="GPUParticlesCollisionBox3D" parent="."]
+editor_description = "@GPUParticlesCollisionBox3D@685:<GPUParticlesCollisionBox3D#187837715058>"
+visible = false
+
+[node name="GPUParticlesCollisionHeightField3D" type="GPUParticlesCollisionHeightField3D" parent="."]
+visible = false
+
+[node name="GPUParticlesCollisionHeightField3DDESCRIPTION" type="GPUParticlesCollisionHeightField3D" parent="."]
+editor_description = "@GPUParticlesCollisionHeightField3D@687:<GPUParticlesCollisionHeightField3D#187888046709>"
+visible = false
+
+[node name="GPUParticlesCollisionSDF3D" type="GPUParticlesCollisionSDF3D" parent="."]
+visible = false
+
+[node name="GPUParticlesCollisionSDF3DDESCRIPTION" type="GPUParticlesCollisionSDF3D" parent="."]
+editor_description = "@GPUParticlesCollisionSDF3D@689:<GPUParticlesCollisionSDF3D#187938378360>"
+visible = false
+
+[node name="GPUParticlesCollisionSphere3D" type="GPUParticlesCollisionSphere3D" parent="."]
+visible = false
+
+[node name="GPUParticlesCollisionSphere3DDESCRIPTION" type="GPUParticlesCollisionSphere3D" parent="."]
+editor_description = "@GPUParticlesCollisionSphere3D@691:<GPUParticlesCollisionSphere3D#187988710011>"
+visible = false
+
+[node name="Generic6DOFJoint3D" type="Generic6DOFJoint3D" parent="."]
+visible = false
+
+[node name="Generic6DOFJoint3DDESCRIPTION" type="Generic6DOFJoint3D" parent="."]
+editor_description = "@Generic6DOFJoint3D@693:<Generic6DOFJoint3D#188039041662>"
+visible = false
+
+[node name="GeometryInstance3D" type="GeometryInstance3D" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+editor_description = ""
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+rotation_edit_mode = 0
+rotation_order = 2
+top_level = false
+visible = false
+visibility_parent = NodePath("")
+layers = 1
+sorting_offset = 0.0
+sorting_use_aabb_center = true
+material_override = null
+material_overlay = null
+transparency = 0.0
+cast_shadow = 1
+extra_cull_margin = 0.0
+custom_aabb = AABB(0, 0, 0, 0, 0, 0)
+lod_bias = 1.0
+ignore_occlusion_culling = false
+gi_mode = 1
+gi_lightmap_scale = 0
+visibility_range_begin = 0.0
+visibility_range_begin_margin = 0.0
+visibility_range_end = 0.0
+visibility_range_end_margin = 0.0
+visibility_range_fade_mode = 0
+script = null
+
+[node name="GeometryInstance3DDESCRIPTION" type="GeometryInstance3D" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+editor_description = "@GeometryInstance3D@695:<GeometryInstance3D#188089373313>"
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+rotation_edit_mode = 0
+rotation_order = 2
+top_level = false
+visible = false
+visibility_parent = NodePath("")
+layers = 1
+sorting_offset = 0.0
+sorting_use_aabb_center = true
+material_override = null
+material_overlay = null
+transparency = 0.0
+cast_shadow = 1
+extra_cull_margin = 0.0
+custom_aabb = AABB(0, 0, 0, 0, 0, 0)
+lod_bias = 1.0
+ignore_occlusion_culling = false
+gi_mode = 1
+gi_lightmap_scale = 0
+visibility_range_begin = 0.0
+visibility_range_begin_margin = 0.0
+visibility_range_end = 0.0
+visibility_range_end_margin = 0.0
+visibility_range_fade_mode = 0
+script = null
+
+[node name="GraphEdit" type="GraphEdit" parent="."]
+visible = false
+
+[node name="GraphEditDESCRIPTION" type="GraphEdit" parent="."]
+editor_description = "@GraphEdit@745:<GraphEdit#189716763362>"
+visible = false
+
+[node name="GraphElement" type="GraphElement" parent="."]
+visible = false
+
+[node name="GraphElementDESCRIPTION" type="GraphElement" parent="."]
+editor_description = "@GraphElement@747:<GraphElement#190589178646>"
+visible = false
+
+[node name="GraphNode" type="GraphNode" parent="."]
+visible = false
+
+[node name="GraphNodeDESCRIPTION" type="GraphNode" parent="."]
+editor_description = "@GraphNode@755:<GraphNode#190824059684>"
+visible = false
+
+[node name="GridContainer" type="GridContainer" parent="."]
+visible = false
+
+[node name="GridContainerDESCRIPTION" type="GridContainer" parent="."]
+editor_description = "@GridContainer@757:<GridContainer#190991831854>"
+visible = false
+
+[node name="GridMap" type="GridMap" parent="."]
+visible = false
+
+[node name="GridMapDESCRIPTION" type="GridMap" parent="."]
+editor_description = "@GridMap@759:<GridMap#191058940722>"
+visible = false
+
+[node name="GrooveJoint2D" type="GrooveJoint2D" parent="."]
+visible = false
+
+[node name="GrooveJoint2DDESCRIPTION" type="GrooveJoint2D" parent="."]
+editor_description = "@GrooveJoint2D@761:<GrooveJoint2D#191109272373>"
+visible = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+visible = false
+
+[node name="HBoxContainerDESCRIPTION" type="HBoxContainer" parent="."]
+editor_description = "@HBoxContainer@763:<HBoxContainer#191193158458>"
+visible = false
+
+[node name="HFlowContainer" type="HFlowContainer" parent="."]
+visible = false
+
+[node name="HFlowContainerDESCRIPTION" type="HFlowContainer" parent="."]
+editor_description = "@HFlowContainer@765:<HFlowContainer#191293821760>"
+visible = false
+
+[node name="HScrollBar" type="HScrollBar" parent="."]
+visible = false
+
+[node name="HScrollBarDESCRIPTION" type="HScrollBar" parent="."]
+editor_description = "@HScrollBar@767:<HScrollBar#191394485062>"
+visible = false
+
+[node name="HSeparator" type="HSeparator" parent="."]
+visible = false
+
+[node name="HSeparatorDESCRIPTION" type="HSeparator" parent="."]
+editor_description = "@HSeparator@769:<HSeparator#191495148364>"
+visible = false
+
+[node name="HSlider" type="HSlider" parent="."]
+visible = false
+
+[node name="HSliderDESCRIPTION" type="HSlider" parent="."]
+editor_description = "@HSlider@771:<HSlider#191595811666>"
+visible = false
+
+[node name="HSplitContainer" type="HSplitContainer" parent="."]
+visible = false
+
+[node name="HSplitContainerDESCRIPTION" type="HSplitContainer" parent="."]
+editor_description = "@HSplitContainer@776:<HSplitContainer#191763583836>"
+visible = false
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="HTTPRequestDESCRIPTION" type="HTTPRequest" parent="."]
+editor_description = "@HTTPRequest@781:<HTTPRequest#192065573742>"
+
+[node name="HingeJoint3D" type="HingeJoint3D" parent="."]
+visible = false
+
+[node name="HingeJoint3DDESCRIPTION" type="HingeJoint3D" parent="."]
+editor_description = "@HingeJoint3D@783:<HingeJoint3D#192216568695>"
+visible = false
+
+[node name="ImporterMeshInstance3D" type="ImporterMeshInstance3D" parent="."]
+visible = false
+
+[node name="ImporterMeshInstance3DDESCRIPTION" type="ImporterMeshInstance3D" parent="."]
+editor_description = "@ImporterMeshInstance3D@785:<ImporterMeshInstance3D#192266900346>"
+visible = false
+
+[node name="ItemList" type="ItemList" parent="."]
+visible = false
+
+[node name="ItemListDESCRIPTION" type="ItemList" parent="."]
+editor_description = "@ItemList@790:<ItemList#192417895299>"
+visible = false
+
+[node name="Label" type="Label" parent="."]
+visible = false
+
+[node name="LabelDESCRIPTION" type="Label" parent="."]
+editor_description = "@Label@792:<Label#192552113035>"
+visible = false
+
+[node name="Label3D" type="Label3D" parent="."]
+visible = false
+
+[node name="Label3DDESCRIPTION" type="Label3D" parent="."]
+editor_description = "@Label3D@794:<Label3D#192619221903>"
+visible = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+visible = false
+
+[node name="LightOccluder2DDESCRIPTION" type="LightOccluder2D" parent="."]
+editor_description = "@LightOccluder2D@796:<LightOccluder2D#192669553554>"
+visible = false
+
+[node name="LightmapGI" type="LightmapGI" parent="."]
+visible = false
+
+[node name="LightmapGIDESCRIPTION" type="LightmapGI" parent="."]
+editor_description = "@LightmapGI@798:<LightmapGI#192719885205>"
+visible = false
+
+[node name="LightmapProbe" type="LightmapProbe" parent="."]
+visible = false
+
+[node name="LightmapProbeDESCRIPTION" type="LightmapProbe" parent="."]
+editor_description = "@LightmapProbe@800:<LightmapProbe#192770216856>"
+visible = false
+
+[node name="Line2D" type="Line2D" parent="."]
+visible = false
+
+[node name="Line2DDESCRIPTION" type="Line2D" parent="."]
+editor_description = "@Line2D@802:<Line2D#192820548507>"
+visible = false
+
+[node name="LineEdit" type="LineEdit" parent="."]
+visible = false
+
+[node name="LineEditDESCRIPTION" type="LineEdit" parent="."]
+editor_description = "@LineEdit@804:<LineEdit#192904434592>"
+visible = false
+
+[node name="LinkButton" type="LinkButton" parent="."]
+visible = false
+
+[node name="LinkButtonDESCRIPTION" type="LinkButton" parent="."]
+editor_description = "@LinkButton@806:<LinkButton#193038652328>"
+visible = false
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+visible = false
+
+[node name="MarginContainerDESCRIPTION" type="MarginContainer" parent="."]
+editor_description = "@MarginContainer@808:<MarginContainer#193156092847>"
+visible = false
+
+[node name="Marker2D" type="Marker2D" parent="."]
+visible = false
+
+[node name="Marker2DDESCRIPTION" type="Marker2D" parent="."]
+editor_description = "@Marker2D@810:<Marker2D#193223201715>"
+visible = false
+
+[node name="Marker3D" type="Marker3D" parent="."]
+visible = false
+
+[node name="Marker3DDESCRIPTION" type="Marker3D" parent="."]
+editor_description = "@Marker3D@812:<Marker3D#193273533366>"
+visible = false
+
+[node name="MenuBar" type="MenuBar" parent="."]
+visible = false
+
+[node name="MenuBarDESCRIPTION" type="MenuBar" parent="."]
+editor_description = "@MenuBar@814:<MenuBar#193357419451>"
+visible = false
+
+[node name="MenuButton" type="MenuButton" parent="."]
+visible = false
+
+[node name="MenuButtonDESCRIPTION" type="MenuButton" parent="."]
+editor_description = "@MenuButton@834:<MenuButton#194028508131>"
+visible = false
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+visible = false
+
+[node name="MeshInstance2DDESCRIPTION" type="MeshInstance2D" parent="."]
+editor_description = "@MeshInstance2D@836:<MeshInstance2D#194380829688>"
+visible = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
+
+[node name="MeshInstance3DDESCRIPTION" type="MeshInstance3D" parent="."]
+editor_description = "@MeshInstance3D@838:<MeshInstance3D#194431161339>"
+visible = false
+
+[node name="MultiMeshInstance2D" type="MultiMeshInstance2D" parent="."]
+visible = false
+
+[node name="MultiMeshInstance2DDESCRIPTION" type="MultiMeshInstance2D" parent="."]
+editor_description = "@MultiMeshInstance2D@842:<MultiMeshInstance2D#194531824641>"
+visible = false
+
+[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="."]
+visible = false
+
+[node name="MultiMeshInstance3DDESCRIPTION" type="MultiMeshInstance3D" parent="."]
+editor_description = "@MultiMeshInstance3D@844:<MultiMeshInstance3D#194582156292>"
+visible = false
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+
+[node name="MultiplayerSpawnerDESCRIPTION" type="MultiplayerSpawner" parent="."]
+editor_description = "@MultiplayerSpawner@846:<MultiplayerSpawner#194632487943>"
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+
+[node name="MultiplayerSynchronizerDESCRIPTION" type="MultiplayerSynchronizer" parent="."]
+editor_description = "@MultiplayerSynchronizer@848:<MultiplayerSynchronizer#194682819594>"
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="NavigationAgent2DDESCRIPTION" type="NavigationAgent2D" parent="."]
+editor_description = "@NavigationAgent2D@850:<NavigationAgent2D#194800260113>"
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="NavigationAgent3DDESCRIPTION" type="NavigationAgent3D" parent="."]
+editor_description = "@NavigationAgent3D@852:<NavigationAgent3D#194951255066>"
+
+[node name="NavigationLink2D" type="NavigationLink2D" parent="."]
+visible = false
+
+[node name="NavigationLink2DDESCRIPTION" type="NavigationLink2D" parent="."]
+editor_description = "@NavigationLink2D@854:<NavigationLink2D#195035141151>"
+visible = false
+
+[node name="NavigationLink3D" type="NavigationLink3D" parent="."]
+visible = false
+
+[node name="NavigationLink3DDESCRIPTION" type="NavigationLink3D" parent="."]
+editor_description = "@NavigationLink3D@856:<NavigationLink3D#195085472802>"
+visible = false
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="."]
+visible = false
+
+[node name="NavigationObstacle2DDESCRIPTION" type="NavigationObstacle2D" parent="."]
+editor_description = "@NavigationObstacle2D@858:<NavigationObstacle2D#195135804453>"
+visible = false
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="."]
+visible = false
+
+[node name="NavigationObstacle3DDESCRIPTION" type="NavigationObstacle3D" parent="."]
+editor_description = "@NavigationObstacle3D@860:<NavigationObstacle3D#195186136104>"
+visible = false
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+visible = false
+
+[node name="NavigationRegion2DDESCRIPTION" type="NavigationRegion2D" parent="."]
+editor_description = "@NavigationRegion2D@862:<NavigationRegion2D#195236467755>"
+visible = false
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+visible = false
+
+[node name="NavigationRegion3DDESCRIPTION" type="NavigationRegion3D" parent="."]
+editor_description = "@NavigationRegion3D@864:<NavigationRegion3D#195286799406>"
+visible = false
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+visible = false
+
+[node name="NinePatchRectDESCRIPTION" type="NinePatchRect" parent="."]
+editor_description = "@NinePatchRect@866:<NinePatchRect#195370685491>"
+visible = false
+
+[node name="Node" type="Node" parent="."]
+
+[node name="NodeDESCRIPTION" type="Node" parent="."]
+editor_description = "@Node@868:<Node#195437794359>"
+
+[node name="Node2D" type="Node2D" parent="."]
+visible = false
+
+[node name="Node2DDESCRIPTION" type="Node2D" parent="."]
+editor_description = "@Node2D@870:<Node2D#195488126010>"
+visible = false
+
+[node name="Node3D" type="Node3D" parent="."]
+visible = false
+
+[node name="Node3DDESCRIPTION" type="Node3D" parent="."]
+editor_description = "@Node3D@872:<Node3D#195538457661>"
+visible = false
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="."]
+visible = false
+
+[node name="OccluderInstance3DDESCRIPTION" type="OccluderInstance3D" parent="."]
+editor_description = "@OccluderInstance3D@874:<OccluderInstance3D#195588789312>"
+visible = false
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+visible = false
+
+[node name="OmniLight3DDESCRIPTION" type="OmniLight3D" parent="."]
+editor_description = "@OmniLight3D@876:<OmniLight3D#195639120963>"
+visible = false
+
+[node name="OpenXRHand" type="OpenXRHand" parent="."]
+visible = false
+
+[node name="OpenXRHandDESCRIPTION" type="OpenXRHand" parent="."]
+editor_description = "@OpenXRHand@878:<OpenXRHand#195689452614>"
+visible = false
+
+[node name="OptionButton" type="OptionButton" parent="."]
+visible = false
+
+[node name="OptionButtonDESCRIPTION" type="OptionButton" parent="."]
+editor_description = "@OptionButton@898:<OptionButton#196343764077>"
+visible = false
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+
+[node name="PanelDESCRIPTION" type="Panel" parent="."]
+editor_description = "@Panel@900:<Panel#196729640068>"
+visible = false
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+visible = false
+
+[node name="PanelContainerDESCRIPTION" type="PanelContainer" parent="."]
+editor_description = "@PanelContainer@902:<PanelContainer#196830303370>"
+visible = false
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+visible = false
+
+[node name="ParallaxBackgroundDESCRIPTION" type="ParallaxBackground" parent="."]
+editor_description = "@ParallaxBackground@904:<ParallaxBackground#196897412238>"
+visible = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+visible = false
+
+[node name="ParallaxLayerDESCRIPTION" type="ParallaxLayer" parent="."]
+editor_description = "@ParallaxLayer@906:<ParallaxLayer#196947743889>"
+visible = false
+
+[node name="Path2D" type="Path2D" parent="."]
+visible = false
+
+[node name="Path2DDESCRIPTION" type="Path2D" parent="."]
+editor_description = "@Path2D@908:<Path2D#196998075540>"
+visible = false
+
+[node name="Path3D" type="Path3D" parent="."]
+visible = false
+
+[node name="Path3DDESCRIPTION" type="Path3D" parent="."]
+editor_description = "@Path3D@910:<Path3D#197048407191>"
+visible = false
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+visible = false
+
+[node name="PathFollow2DDESCRIPTION" type="PathFollow2D" parent="."]
+editor_description = "@PathFollow2D@912:<PathFollow2D#197098738842>"
+visible = false
+
+[node name="PathFollow3D" type="PathFollow3D" parent="."]
+visible = false
+
+[node name="PathFollow3DDESCRIPTION" type="PathFollow3D" parent="."]
+editor_description = "@PathFollow3D@914:<PathFollow3D#197149070493>"
+visible = false
+
+[node name="PhysicalBone2D" type="PhysicalBone2D" parent="."]
+visible = false
+
+[node name="PhysicalBone2DDESCRIPTION" type="PhysicalBone2D" parent="."]
+editor_description = "@PhysicalBone2D@916:<PhysicalBone2D#197199402144>"
+visible = false
+
+[node name="PhysicalBone3D" type="PhysicalBone3D" parent="."]
+visible = false
+
+[node name="PhysicalBone3DDESCRIPTION" type="PhysicalBone3D" parent="."]
+editor_description = "@PhysicalBone3D@918:<PhysicalBone3D#197249733795>"
+visible = false
+
+[node name="PinJoint2D" type="PinJoint2D" parent="."]
+visible = false
+
+[node name="PinJoint2DDESCRIPTION" type="PinJoint2D" parent="."]
+editor_description = "@PinJoint2D@920:<PinJoint2D#197300065446>"
+visible = false
+
+[node name="PinJoint3D" type="PinJoint3D" parent="."]
+visible = false
+
+[node name="PinJoint3DDESCRIPTION" type="PinJoint3D" parent="."]
+editor_description = "@PinJoint3D@922:<PinJoint3D#197350397097>"
+visible = false
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+visible = false
+
+[node name="PointLight2DDESCRIPTION" type="PointLight2D" parent="."]
+editor_description = "@PointLight2D@924:<PointLight2D#197400728748>"
+visible = false
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+visible = false
+
+[node name="Polygon2DDESCRIPTION" type="Polygon2D" parent="."]
+editor_description = "@Polygon2D@926:<Polygon2D#197451060399>"
+visible = false
+
+[node name="Popup" type="Popup" parent="."]
+
+[node name="PopupDESCRIPTION" type="Popup" parent="."]
+editor_description = "@Popup@928:<Popup#197602055352>"
+
+[node name="PopupMenu" type="PopupMenu" parent="."]
+
+[node name="PopupMenuDESCRIPTION" type="PopupMenu" parent="."]
+editor_description = "@PopupMenu@945:<PopupMenu#198206035164>"
+
+[node name="PopupPanel" type="PopupPanel" parent="."]
+
+[node name="PopupPanelDESCRIPTION" type="PopupPanel" parent="."]
+editor_description = "@PopupPanel@950:<PopupPanel#198675797240>"
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+visible = false
+
+[node name="ProgressBarDESCRIPTION" type="ProgressBar" parent="."]
+editor_description = "@ProgressBar@952:<ProgressBar#198843569410>"
+visible = false
+
+[node name="Range" type="Range" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+editor_description = ""
+visible = false
+modulate = Color(1, 1, 1, 1)
+self_modulate = Color(1, 1, 1, 1)
+show_behind_parent = false
+top_level = false
+clip_children = 0
+light_mask = 1
+visibility_layer = 1
+z_index = 0
+z_as_relative = true
+y_sort_enabled = false
+texture_filter = 0
+texture_repeat = 0
+material = null
+use_parent_material = false
+clip_contents = false
+custom_minimum_size = Vector2(0, 0)
+layout_direction = 0
+layout_mode = 3
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+rotation = 0.0
+scale = Vector2(1, 1)
+pivot_offset = Vector2(0, 0)
+size_flags_horizontal = 1
+size_flags_vertical = 1
+size_flags_stretch_ratio = 1.0
+auto_translate = true
+localize_numeral_system = true
+tooltip_text = ""
+focus_neighbor_left = NodePath("")
+focus_neighbor_top = NodePath("")
+focus_neighbor_right = NodePath("")
+focus_neighbor_bottom = NodePath("")
+focus_next = NodePath("")
+focus_previous = NodePath("")
+focus_mode = 0
+mouse_filter = 0
+mouse_force_pass_scroll_events = true
+mouse_default_cursor_shape = 0
+theme = null
+theme_type_variation = &""
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 0.0
+exp_edit = false
+rounded = false
+allow_greater = false
+allow_lesser = false
+script = null
+
+[node name="RangeDESCRIPTION" type="Range" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+editor_description = "@Range@954:<Range#198944232712>"
+visible = false
+modulate = Color(1, 1, 1, 1)
+self_modulate = Color(1, 1, 1, 1)
+show_behind_parent = false
+top_level = false
+clip_children = 0
+light_mask = 1
+visibility_layer = 1
+z_index = 0
+z_as_relative = true
+y_sort_enabled = false
+texture_filter = 0
+texture_repeat = 0
+material = null
+use_parent_material = false
+clip_contents = false
+custom_minimum_size = Vector2(0, 0)
+layout_direction = 0
+layout_mode = 3
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+rotation = 0.0
+scale = Vector2(1, 1)
+pivot_offset = Vector2(0, 0)
+size_flags_horizontal = 1
+size_flags_vertical = 1
+size_flags_stretch_ratio = 1.0
+auto_translate = true
+localize_numeral_system = true
+tooltip_text = ""
+focus_neighbor_left = NodePath("")
+focus_neighbor_top = NodePath("")
+focus_neighbor_right = NodePath("")
+focus_neighbor_bottom = NodePath("")
+focus_next = NodePath("")
+focus_previous = NodePath("")
+focus_mode = 0
+mouse_filter = 0
+mouse_force_pass_scroll_events = true
+mouse_default_cursor_shape = 0
+theme = null
+theme_type_variation = &""
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 0.0
+exp_edit = false
+rounded = false
+allow_greater = false
+allow_lesser = false
+script = null
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+visible = false
+
+[node name="RayCast2DDESCRIPTION" type="RayCast2D" parent="."]
+editor_description = "@RayCast2D@956:<RayCast2D#199011341580>"
+visible = false
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+visible = false
+
+[node name="RayCast3DDESCRIPTION" type="RayCast3D" parent="."]
+editor_description = "@RayCast3D@958:<RayCast3D#199061673231>"
+visible = false
+
+[node name="ReferenceRect" type="ReferenceRect" parent="."]
+visible = false
+
+[node name="ReferenceRectDESCRIPTION" type="ReferenceRect" parent="."]
+editor_description = "@ReferenceRect@960:<ReferenceRect#199145559316>"
+visible = false
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="."]
+visible = false
+
+[node name="ReflectionProbeDESCRIPTION" type="ReflectionProbe" parent="."]
+editor_description = "@ReflectionProbe@962:<ReflectionProbe#199212668184>"
+visible = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
+visible = false
+
+[node name="RemoteTransform2DDESCRIPTION" type="RemoteTransform2D" parent="."]
+editor_description = "@RemoteTransform2D@964:<RemoteTransform2D#199262999835>"
+visible = false
+
+[node name="RemoteTransform3D" type="RemoteTransform3D" parent="."]
+visible = false
+
+[node name="RemoteTransform3DDESCRIPTION" type="RemoteTransform3D" parent="."]
+editor_description = "@RemoteTransform3D@966:<RemoteTransform3D#199313331486>"
+visible = false
+
+[node name="ResourcePreloader" type="ResourcePreloader" parent="."]
+
+[node name="ResourcePreloaderDESCRIPTION" type="ResourcePreloader" parent="."]
+editor_description = "@ResourcePreloader@968:<ResourcePreloader#199363663137>"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
+
+[node name="RichTextLabelDESCRIPTION" type="RichTextLabel" parent="."]
+editor_description = "@RichTextLabel@973:<RichTextLabel#199548212524>"
+visible = false
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+visible = false
+
+[node name="RigidBody2DDESCRIPTION" type="RigidBody2D" parent="."]
+editor_description = "@RigidBody2D@975:<RigidBody2D#199665653043>"
+visible = false
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+visible = false
+
+[node name="RigidBody3DDESCRIPTION" type="RigidBody3D" parent="."]
+editor_description = "@RigidBody3D@977:<RigidBody3D#199715984694>"
+visible = false
+
+[node name="RootMotionView" type="RootMotionView" parent="."]
+visible = false
+
+[node name="RootMotionViewDESCRIPTION" type="RootMotionView" parent="."]
+editor_description = "@RootMotionView@979:<RootMotionView#199799870779>"
+visible = false
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+visible = false
+
+[node name="ScrollContainerDESCRIPTION" type="ScrollContainer" parent="."]
+editor_description = "@ScrollContainer@981:<ScrollContainer#200034751817>"
+visible = false
+
+[node name="ShaderGlobalsOverride" type="ShaderGlobalsOverride" parent="."]
+
+[node name="ShaderGlobalsOverrideDESCRIPTION" type="ShaderGlobalsOverride" parent="."]
+editor_description = "@ShaderGlobalsOverride@983:<ShaderGlobalsOverride#200168969553>"
+
+[node name="ShapeCast2D" type="ShapeCast2D" parent="."]
+visible = false
+
+[node name="ShapeCast2DDESCRIPTION" type="ShapeCast2D" parent="."]
+editor_description = "@ShapeCast2D@985:<ShapeCast2D#200219301204>"
+visible = false
+
+[node name="ShapeCast3D" type="ShapeCast3D" parent="."]
+visible = false
+
+[node name="ShapeCast3DDESCRIPTION" type="ShapeCast3D" parent="."]
+editor_description = "@ShapeCast3D@987:<ShapeCast3D#200269632855>"
+visible = false
+
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+visible = false
+
+[node name="Skeleton2DDESCRIPTION" type="Skeleton2D" parent="."]
+editor_description = "@Skeleton2D@989:<Skeleton2D#200319964506>"
+visible = false
+
+[node name="Skeleton3D" type="Skeleton3D" parent="."]
+visible = false
+
+[node name="Skeleton3DDESCRIPTION" type="Skeleton3D" parent="."]
+editor_description = "@Skeleton3D@991:<Skeleton3D#200370296157>"
+visible = false
+
+[node name="SkeletonIK3D" type="SkeletonIK3D" parent="."]
+process_priority = 1
+
+[node name="SkeletonIK3DDESCRIPTION" type="SkeletonIK3D" parent="."]
+process_priority = 1
+editor_description = "@SkeletonIK3D@993:<SkeletonIK3D#200420627808>"
+
+[node name="SliderJoint3D" type="SliderJoint3D" parent="."]
+visible = false
+
+[node name="SliderJoint3DDESCRIPTION" type="SliderJoint3D" parent="."]
+editor_description = "@SliderJoint3D@995:<SliderJoint3D#200470959459>"
+visible = false
+
+[node name="SoftBody3D" type="SoftBody3D" parent="."]
+visible = false
+
+[node name="SoftBody3DDESCRIPTION" type="SoftBody3D" parent="."]
+editor_description = "@SoftBody3D@997:<SoftBody3D#200554845544>"
+visible = false
+
+[node name="SpinBox" type="SpinBox" parent="."]
+visible = false
+
+[node name="SpinBoxDESCRIPTION" type="SpinBox" parent="."]
+editor_description = "@SpinBox@1005:<SpinBox#200756172148>"
+visible = false
+
+[node name="SplitContainer" type="SplitContainer" parent="."]
+visible = false
+
+[node name="SplitContainerDESCRIPTION" type="SplitContainer" parent="."]
+editor_description = "@SplitContainer@1010:<SplitContainer#200974275969>"
+visible = false
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+visible = false
+
+[node name="SpotLight3DDESCRIPTION" type="SpotLight3D" parent="."]
+editor_description = "@SpotLight3D@1012:<SpotLight3D#201074939271>"
+visible = false
+
+[node name="SpringArm3D" type="SpringArm3D" parent="."]
+visible = false
+
+[node name="SpringArm3DDESCRIPTION" type="SpringArm3D" parent="."]
+editor_description = "@SpringArm3D@1014:<SpringArm3D#201125270922>"
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+
+[node name="Sprite2DDESCRIPTION" type="Sprite2D" parent="."]
+editor_description = "@Sprite2D@1016:<Sprite2D#201175602573>"
+visible = false
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+visible = false
+
+[node name="Sprite3DDESCRIPTION" type="Sprite3D" parent="."]
+editor_description = "@Sprite3D@1018:<Sprite3D#201225934224>"
+visible = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+visible = false
+
+[node name="StaticBody2DDESCRIPTION" type="StaticBody2D" parent="."]
+editor_description = "@StaticBody2D@1020:<StaticBody2D#201276265875>"
+visible = false
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+visible = false
+
+[node name="StaticBody3DDESCRIPTION" type="StaticBody3D" parent="."]
+editor_description = "@StaticBody3D@1022:<StaticBody3D#201326597526>"
+visible = false
+
+[node name="SubViewport" type="SubViewport" parent="."]
+
+[node name="SubViewportDESCRIPTION" type="SubViewport" parent="."]
+editor_description = "@SubViewport@1024:<SubViewport#201444038045>"
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+visible = false
+
+[node name="SubViewportContainerDESCRIPTION" type="SubViewportContainer" parent="."]
+editor_description = "@SubViewportContainer@1026:<SubViewportContainer#201561478564>"
+visible = false
+
+[node name="TabBar" type="TabBar" parent="."]
+visible = false
+
+[node name="TabBarDESCRIPTION" type="TabBar" parent="."]
+editor_description = "@TabBar@1028:<TabBar#201662141866>"
+visible = false
+
+[node name="TabContainer" type="TabContainer" parent="."]
+visible = false
+
+[node name="TabContainerDESCRIPTION" type="TabContainer" parent="."]
+editor_description = "@TabContainer@1033:<TabContainer#201829914036>"
+visible = false
+
+[node name="TextEdit" type="TextEdit" parent="."]
+visible = false
+
+[node name="TextEditDESCRIPTION" type="TextEdit" parent="."]
+editor_description = "@TextEdit@1050:<TextEdit#202299676110>"
+visible = false
+
+[node name="TextureButton" type="TextureButton" parent="."]
+visible = false
+
+[node name="TextureButtonDESCRIPTION" type="TextureButton" parent="."]
+editor_description = "@TextureButton@1052:<TextureButton#202568111581>"
+visible = false
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+visible = false
+
+[node name="TextureProgressBarDESCRIPTION" type="TextureProgressBar" parent="."]
+editor_description = "@TextureProgressBar@1054:<TextureProgressBar#202668774883>"
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+
+[node name="TextureRectDESCRIPTION" type="TextureRect" parent="."]
+editor_description = "@TextureRect@1056:<TextureRect#202769438185>"
+visible = false
+
+[node name="TileMap" type="TileMap" parent="."]
+visible = false
+format = 2
+
+[node name="TileMapDESCRIPTION" type="TileMap" parent="."]
+editor_description = "@TileMap@1058:<TileMap#202903655921>"
+visible = false
+format = 2
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="TimerDESCRIPTION" type="Timer" parent="."]
+editor_description = "@Timer@1060:<Timer#202987542006>"
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+visible = false
+
+[node name="TouchScreenButtonDESCRIPTION" type="TouchScreenButton" parent="."]
+editor_description = "@TouchScreenButton@1062:<TouchScreenButton#203071428091>"
+visible = false
+
+[node name="Tree" type="Tree" parent="."]
+visible = false
+
+[node name="TreeDESCRIPTION" type="Tree" parent="."]
+editor_description = "@Tree@1121:<Tree#204648486487>"
+visible = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+visible = false
+
+[node name="VBoxContainerDESCRIPTION" type="VBoxContainer" parent="."]
+editor_description = "@VBoxContainer@1123:<VBoxContainer#205487347336>"
+visible = false
+
+[node name="VFlowContainer" type="VFlowContainer" parent="."]
+visible = false
+
+[node name="VFlowContainerDESCRIPTION" type="VFlowContainer" parent="."]
+editor_description = "@VFlowContainer@1125:<VFlowContainer#205588010638>"
+visible = false
+
+[node name="VScrollBar" type="VScrollBar" parent="."]
+visible = false
+
+[node name="VScrollBarDESCRIPTION" type="VScrollBar" parent="."]
+editor_description = "@VScrollBar@1127:<VScrollBar#205688673940>"
+visible = false
+
+[node name="VSeparator" type="VSeparator" parent="."]
+visible = false
+
+[node name="VSeparatorDESCRIPTION" type="VSeparator" parent="."]
+editor_description = "@VSeparator@1129:<VSeparator#205789337242>"
+visible = false
+
+[node name="VSlider" type="VSlider" parent="."]
+visible = false
+
+[node name="VSliderDESCRIPTION" type="VSlider" parent="."]
+editor_description = "@VSlider@1131:<VSlider#205890000544>"
+visible = false
+
+[node name="VSplitContainer" type="VSplitContainer" parent="."]
+visible = false
+
+[node name="VSplitContainerDESCRIPTION" type="VSplitContainer" parent="."]
+editor_description = "@VSplitContainer@1136:<VSplitContainer#206057772714>"
+visible = false
+
+[node name="VehicleBody3D" type="VehicleBody3D" parent="."]
+visible = false
+
+[node name="VehicleBody3DDESCRIPTION" type="VehicleBody3D" parent="."]
+editor_description = "@VehicleBody3D@1138:<VehicleBody3D#206158436016>"
+visible = false
+
+[node name="VehicleWheel3D" type="VehicleWheel3D" parent="."]
+visible = false
+
+[node name="VehicleWheel3DDESCRIPTION" type="VehicleWheel3D" parent="."]
+editor_description = "@VehicleWheel3D@1140:<VehicleWheel3D#206208767667>"
+visible = false
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+visible = false
+
+[node name="VideoStreamPlayerDESCRIPTION" type="VideoStreamPlayer" parent="."]
+editor_description = "@VideoStreamPlayer@1142:<VideoStreamPlayer#206292653752>"
+visible = false
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+visible = false
+
+[node name="VisibleOnScreenEnabler2DDESCRIPTION" type="VisibleOnScreenEnabler2D" parent="."]
+editor_description = "@VisibleOnScreenEnabler2D@1144:<VisibleOnScreenEnabler2D#206359762620>"
+visible = false
+
+[node name="VisibleOnScreenEnabler3D" type="VisibleOnScreenEnabler3D" parent="."]
+visible = false
+
+[node name="VisibleOnScreenEnabler3DDESCRIPTION" type="VisibleOnScreenEnabler3D" parent="."]
+editor_description = "@VisibleOnScreenEnabler3D@1146:<VisibleOnScreenEnabler3D#206410094271>"
+visible = false
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+visible = false
+
+[node name="VisibleOnScreenNotifier2DDESCRIPTION" type="VisibleOnScreenNotifier2D" parent="."]
+editor_description = "@VisibleOnScreenNotifier2D@1148:<VisibleOnScreenNotifier2D#206460425922>"
+visible = false
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="."]
+visible = false
+
+[node name="VisibleOnScreenNotifier3DDESCRIPTION" type="VisibleOnScreenNotifier3D" parent="."]
+editor_description = "@VisibleOnScreenNotifier3D@1150:<VisibleOnScreenNotifier3D#206510757573>"
+visible = false
+
+[node name="VisualInstance3D" type="VisualInstance3D" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+editor_description = ""
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+rotation_edit_mode = 0
+rotation_order = 2
+top_level = false
+visible = false
+visibility_parent = NodePath("")
+layers = 1
+script = null
+
+[node name="VisualInstance3DDESCRIPTION" type="VisualInstance3D" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+editor_description = "@VisualInstance3D@1152:<VisualInstance3D#206561089224>"
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+rotation_edit_mode = 0
+rotation_order = 2
+top_level = false
+visible = false
+visibility_parent = NodePath("")
+layers = 1
+script = null
+
+[node name="VoxelGI" type="VoxelGI" parent="."]
+visible = false
+
+[node name="VoxelGIDESCRIPTION" type="VoxelGI" parent="."]
+editor_description = "@VoxelGI@1154:<VoxelGI#206611420875>"
+visible = false
+
+[node name="Window" type="Window" parent="."]
+visible = false
+
+[node name="WindowDESCRIPTION" type="Window" parent="."]
+editor_description = "@Window@1156:<Window#206762415828>"
+visible = false
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+
+[node name="WorldEnvironmentDESCRIPTION" type="WorldEnvironment" parent="."]
+editor_description = "@WorldEnvironment@1158:<WorldEnvironment#206863079130>"
+
+[node name="XRAnchor3D" type="XRAnchor3D" parent="."]
+visible = false
+
+[node name="XRAnchor3DDESCRIPTION" type="XRAnchor3D" parent="."]
+editor_description = "@XRAnchor3D@1160:<XRAnchor3D#206913410781>"
+visible = false
+
+[node name="XRCamera3D" type="XRCamera3D" parent="."]
+visible = false
+
+[node name="XRCamera3DDESCRIPTION" type="XRCamera3D" parent="."]
+editor_description = "@XRCamera3D@1162:<XRCamera3D#206997296866>"
+visible = false
+
+[node name="XRController3D" type="XRController3D" parent="."]
+visible = false
+
+[node name="XRController3DDESCRIPTION" type="XRController3D" parent="."]
+editor_description = "@XRController3D@1164:<XRController3D#207064405734>"
+visible = false
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+visible = false
+
+[node name="XROrigin3DDESCRIPTION" type="XROrigin3D" parent="."]
+editor_description = "@XROrigin3D@1166:<XROrigin3D#207114737385>"
+visible = false
+
+[connection signal="ready" from="AcceptDialog" to="AcceptDialog" method="can_process"]
+[connection signal="ready" from="AcceptDialogDESCRIPTION" to="AcceptDialogDESCRIPTION" method="can_process"]
+[connection signal="ready" from="AnimatableBody3D" to="AnimatableBody3D" method="can_process"]
+[connection signal="ready" from="AnimatableBody3DDESCRIPTION" to="AnimatableBody3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="AnimatedSprite3D" to="AnimatedSprite3D" method="can_process"]
+[connection signal="ready" from="AnimatedSprite3DDESCRIPTION" to="AnimatedSprite3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="AnimationTree" to="AnimationTree" method="can_process"]
+[connection signal="ready" from="AnimationTreeDESCRIPTION" to="AnimationTreeDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Area3D" to="Area3D" method="can_process"]
+[connection signal="ready" from="Area3DDESCRIPTION" to="Area3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="AudioListener2D" to="AudioListener2D" method="can_process"]
+[connection signal="ready" from="AudioListener2DDESCRIPTION" to="AudioListener2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="AudioStreamPlayer" to="AudioStreamPlayer" method="can_process"]
+[connection signal="ready" from="AudioStreamPlayerDESCRIPTION" to="AudioStreamPlayerDESCRIPTION" method="can_process"]
+[connection signal="ready" from="AudioStreamPlayer3D" to="AudioStreamPlayer3D" method="can_process"]
+[connection signal="ready" from="AudioStreamPlayer3DDESCRIPTION" to="AudioStreamPlayer3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="BaseButton" to="BaseButton" method="can_process"]
+[connection signal="ready" from="BaseButtonDESCRIPTION" to="BaseButtonDESCRIPTION" method="can_process"]
+[connection signal="ready" from="BoneAttachment3D" to="BoneAttachment3D" method="can_process"]
+[connection signal="ready" from="BoneAttachment3DDESCRIPTION" to="BoneAttachment3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Button" to="Button" method="can_process"]
+[connection signal="ready" from="ButtonDESCRIPTION" to="ButtonDESCRIPTION" method="can_process"]
+[connection signal="ready" from="CPUParticles3D" to="CPUParticles3D" method="can_process"]
+[connection signal="ready" from="CPUParticles3DDESCRIPTION" to="CPUParticles3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="CSGCombiner3D" to="CSGCombiner3D" method="can_process"]
+[connection signal="ready" from="CSGCombiner3DDESCRIPTION" to="CSGCombiner3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="CSGMesh3D" to="CSGMesh3D" method="can_process"]
+[connection signal="ready" from="CSGMesh3DDESCRIPTION" to="CSGMesh3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="CSGSphere3D" to="CSGSphere3D" method="can_process"]
+[connection signal="ready" from="CSGSphere3DDESCRIPTION" to="CSGSphere3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Camera2D" to="Camera2D" method="can_process"]
+[connection signal="ready" from="Camera2DDESCRIPTION" to="Camera2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="CanvasGroup" to="CanvasGroup" method="can_process"]
+[connection signal="ready" from="CanvasGroupDESCRIPTION" to="CanvasGroupDESCRIPTION" method="can_process"]
+[connection signal="ready" from="CanvasModulate" to="CanvasModulate" method="can_process"]
+[connection signal="ready" from="CanvasModulateDESCRIPTION" to="CanvasModulateDESCRIPTION" method="can_process"]
+[connection signal="ready" from="CharacterBody2D" to="CharacterBody2D" method="can_process"]
+[connection signal="ready" from="CharacterBody2DDESCRIPTION" to="CharacterBody2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="CheckBox" to="CheckBox" method="can_process"]
+[connection signal="ready" from="CheckBoxDESCRIPTION" to="CheckBoxDESCRIPTION" method="can_process"]
+[connection signal="ready" from="CodeEdit" to="CodeEdit" method="can_process"]
+[connection signal="ready" from="CodeEditDESCRIPTION" to="CodeEditDESCRIPTION" method="can_process"]
+[connection signal="ready" from="CollisionPolygon3D" to="CollisionPolygon3D" method="can_process"]
+[connection signal="ready" from="CollisionPolygon3DDESCRIPTION" to="CollisionPolygon3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="CollisionShape3D" to="CollisionShape3D" method="can_process"]
+[connection signal="ready" from="CollisionShape3DDESCRIPTION" to="CollisionShape3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="ColorPickerButton" to="ColorPickerButton" method="can_process"]
+[connection signal="ready" from="ColorPickerButtonDESCRIPTION" to="ColorPickerButtonDESCRIPTION" method="can_process"]
+[connection signal="ready" from="ConeTwistJoint3D" to="ConeTwistJoint3D" method="can_process"]
+[connection signal="ready" from="ConeTwistJoint3DDESCRIPTION" to="ConeTwistJoint3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Container" to="Container" method="can_process"]
+[connection signal="ready" from="ContainerDESCRIPTION" to="ContainerDESCRIPTION" method="can_process"]
+[connection signal="ready" from="DampedSpringJoint2D" to="DampedSpringJoint2D" method="can_process"]
+[connection signal="ready" from="DampedSpringJoint2DDESCRIPTION" to="DampedSpringJoint2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="DirectionalLight2D" to="DirectionalLight2D" method="can_process"]
+[connection signal="ready" from="DirectionalLight2DDESCRIPTION" to="DirectionalLight2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="FileDialog" to="FileDialog" method="can_process"]
+[connection signal="ready" from="FileDialogDESCRIPTION" to="FileDialogDESCRIPTION" method="can_process"]
+[connection signal="ready" from="FogVolume" to="FogVolume" method="can_process"]
+[connection signal="ready" from="FogVolumeDESCRIPTION" to="FogVolumeDESCRIPTION" method="can_process"]
+[connection signal="ready" from="GPUParticles3D" to="GPUParticles3D" method="can_process"]
+[connection signal="ready" from="GPUParticles3DDESCRIPTION" to="GPUParticles3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="GPUParticlesAttractorSphere3D" to="GPUParticlesAttractorSphere3D" method="can_process"]
+[connection signal="ready" from="GPUParticlesAttractorSphere3DDESCRIPTION" to="GPUParticlesAttractorSphere3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="GPUParticlesCollisionBox3D" to="GPUParticlesCollisionBox3D" method="can_process"]
+[connection signal="ready" from="GPUParticlesCollisionBox3DDESCRIPTION" to="GPUParticlesCollisionBox3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="GPUParticlesCollisionSDF3D" to="GPUParticlesCollisionSDF3D" method="can_process"]
+[connection signal="ready" from="GPUParticlesCollisionSDF3DDESCRIPTION" to="GPUParticlesCollisionSDF3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Generic6DOFJoint3D" to="Generic6DOFJoint3D" method="can_process"]
+[connection signal="ready" from="Generic6DOFJoint3DDESCRIPTION" to="Generic6DOFJoint3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="GraphEdit" to="GraphEdit" method="can_process"]
+[connection signal="ready" from="GraphEditDESCRIPTION" to="GraphEditDESCRIPTION" method="can_process"]
+[connection signal="ready" from="GraphNode" to="GraphNode" method="can_process"]
+[connection signal="ready" from="GraphNodeDESCRIPTION" to="GraphNodeDESCRIPTION" method="can_process"]
+[connection signal="ready" from="GridMap" to="GridMap" method="can_process"]
+[connection signal="ready" from="GridMapDESCRIPTION" to="GridMapDESCRIPTION" method="can_process"]
+[connection signal="ready" from="HBoxContainer" to="HBoxContainer" method="can_process"]
+[connection signal="ready" from="HBoxContainerDESCRIPTION" to="HBoxContainerDESCRIPTION" method="can_process"]
+[connection signal="ready" from="HScrollBar" to="HScrollBar" method="can_process"]
+[connection signal="ready" from="HScrollBarDESCRIPTION" to="HScrollBarDESCRIPTION" method="can_process"]
+[connection signal="ready" from="HSlider" to="HSlider" method="can_process"]
+[connection signal="ready" from="HSliderDESCRIPTION" to="HSliderDESCRIPTION" method="can_process"]
+[connection signal="ready" from="HTTPRequest" to="HTTPRequest" method="can_process"]
+[connection signal="ready" from="HTTPRequestDESCRIPTION" to="HTTPRequestDESCRIPTION" method="can_process"]
+[connection signal="ready" from="ImporterMeshInstance3D" to="ImporterMeshInstance3D" method="can_process"]
+[connection signal="ready" from="ImporterMeshInstance3DDESCRIPTION" to="ImporterMeshInstance3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Label" to="Label" method="can_process"]
+[connection signal="ready" from="LabelDESCRIPTION" to="LabelDESCRIPTION" method="can_process"]
+[connection signal="ready" from="LightOccluder2D" to="LightOccluder2D" method="can_process"]
+[connection signal="ready" from="LightOccluder2DDESCRIPTION" to="LightOccluder2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="LightmapProbe" to="LightmapProbe" method="can_process"]
+[connection signal="ready" from="LightmapProbeDESCRIPTION" to="LightmapProbeDESCRIPTION" method="can_process"]
+[connection signal="ready" from="LineEdit" to="LineEdit" method="can_process"]
+[connection signal="ready" from="LineEditDESCRIPTION" to="LineEditDESCRIPTION" method="can_process"]
+[connection signal="ready" from="MarginContainer" to="MarginContainer" method="can_process"]
+[connection signal="ready" from="MarginContainerDESCRIPTION" to="MarginContainerDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Marker3D" to="Marker3D" method="can_process"]
+[connection signal="ready" from="Marker3DDESCRIPTION" to="Marker3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="MenuButton" to="MenuButton" method="can_process"]
+[connection signal="ready" from="MenuButtonDESCRIPTION" to="MenuButtonDESCRIPTION" method="can_process"]
+[connection signal="ready" from="MeshInstance3D" to="MeshInstance3D" method="can_process"]
+[connection signal="ready" from="MeshInstance3DDESCRIPTION" to="MeshInstance3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="MultiMeshInstance2D" to="MultiMeshInstance2D" method="can_process"]
+[connection signal="ready" from="MultiMeshInstance2DDESCRIPTION" to="MultiMeshInstance2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="MultiplayerSpawner" to="MultiplayerSpawner" method="can_process"]
+[connection signal="ready" from="MultiplayerSpawnerDESCRIPTION" to="MultiplayerSpawnerDESCRIPTION" method="can_process"]
+[connection signal="ready" from="NavigationAgent2D" to="NavigationAgent2D" method="can_process"]
+[connection signal="ready" from="NavigationAgent2DDESCRIPTION" to="NavigationAgent2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="NavigationLink2D" to="NavigationLink2D" method="can_process"]
+[connection signal="ready" from="NavigationLink2DDESCRIPTION" to="NavigationLink2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="NavigationObstacle2D" to="NavigationObstacle2D" method="can_process"]
+[connection signal="ready" from="NavigationObstacle2DDESCRIPTION" to="NavigationObstacle2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="NavigationRegion2D" to="NavigationRegion2D" method="can_process"]
+[connection signal="ready" from="NavigationRegion2DDESCRIPTION" to="NavigationRegion2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="NinePatchRect" to="NinePatchRect" method="can_process"]
+[connection signal="ready" from="NinePatchRectDESCRIPTION" to="NinePatchRectDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Node2D" to="Node2D" method="can_process"]
+[connection signal="ready" from="Node2DDESCRIPTION" to="Node2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="OccluderInstance3D" to="OccluderInstance3D" method="can_process"]
+[connection signal="ready" from="OccluderInstance3DDESCRIPTION" to="OccluderInstance3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="OpenXRHand" to="OpenXRHand" method="can_process"]
+[connection signal="ready" from="OpenXRHandDESCRIPTION" to="OpenXRHandDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Panel" to="Panel" method="can_process"]
+[connection signal="ready" from="PanelDESCRIPTION" to="PanelDESCRIPTION" method="can_process"]
+[connection signal="ready" from="ParallaxBackground" to="ParallaxBackground" method="can_process"]
+[connection signal="ready" from="ParallaxBackgroundDESCRIPTION" to="ParallaxBackgroundDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Path2D" to="Path2D" method="can_process"]
+[connection signal="ready" from="Path2DDESCRIPTION" to="Path2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="PathFollow2D" to="PathFollow2D" method="can_process"]
+[connection signal="ready" from="PathFollow2DDESCRIPTION" to="PathFollow2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="PhysicalBone2D" to="PhysicalBone2D" method="can_process"]
+[connection signal="ready" from="PhysicalBone2DDESCRIPTION" to="PhysicalBone2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="PinJoint2D" to="PinJoint2D" method="can_process"]
+[connection signal="ready" from="PinJoint2DDESCRIPTION" to="PinJoint2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="PointLight2D" to="PointLight2D" method="can_process"]
+[connection signal="ready" from="PointLight2DDESCRIPTION" to="PointLight2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Popup" to="Popup" method="can_process"]
+[connection signal="ready" from="PopupDESCRIPTION" to="PopupDESCRIPTION" method="can_process"]
+[connection signal="ready" from="PopupPanel" to="PopupPanel" method="can_process"]
+[connection signal="ready" from="PopupPanelDESCRIPTION" to="PopupPanelDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Range" to="Range" method="can_process"]
+[connection signal="ready" from="RangeDESCRIPTION" to="RangeDESCRIPTION" method="can_process"]
+[connection signal="ready" from="RayCast3D" to="RayCast3D" method="can_process"]
+[connection signal="ready" from="RayCast3DDESCRIPTION" to="RayCast3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="ReflectionProbe" to="ReflectionProbe" method="can_process"]
+[connection signal="ready" from="ReflectionProbeDESCRIPTION" to="ReflectionProbeDESCRIPTION" method="can_process"]
+[connection signal="ready" from="RemoteTransform3D" to="RemoteTransform3D" method="can_process"]
+[connection signal="ready" from="RemoteTransform3DDESCRIPTION" to="RemoteTransform3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="RichTextLabel" to="RichTextLabel" method="can_process"]
+[connection signal="ready" from="RichTextLabelDESCRIPTION" to="RichTextLabelDESCRIPTION" method="can_process"]
+[connection signal="ready" from="RigidBody3D" to="RigidBody3D" method="can_process"]
+[connection signal="ready" from="RigidBody3DDESCRIPTION" to="RigidBody3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="ScrollContainer" to="ScrollContainer" method="can_process"]
+[connection signal="ready" from="ScrollContainerDESCRIPTION" to="ScrollContainerDESCRIPTION" method="can_process"]
+[connection signal="ready" from="ShapeCast2D" to="ShapeCast2D" method="can_process"]
+[connection signal="ready" from="ShapeCast2DDESCRIPTION" to="ShapeCast2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Skeleton2D" to="Skeleton2D" method="can_process"]
+[connection signal="ready" from="Skeleton2DDESCRIPTION" to="Skeleton2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="SkeletonIK3D" to="SkeletonIK3D" method="can_process"]
+[connection signal="ready" from="SkeletonIK3DDESCRIPTION" to="SkeletonIK3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="SoftBody3D" to="SoftBody3D" method="can_process"]
+[connection signal="ready" from="SoftBody3DDESCRIPTION" to="SoftBody3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="SplitContainer" to="SplitContainer" method="can_process"]
+[connection signal="ready" from="SplitContainerDESCRIPTION" to="SplitContainerDESCRIPTION" method="can_process"]
+[connection signal="ready" from="SpringArm3D" to="SpringArm3D" method="can_process"]
+[connection signal="ready" from="SpringArm3DDESCRIPTION" to="SpringArm3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Sprite3D" to="Sprite3D" method="can_process"]
+[connection signal="ready" from="Sprite3DDESCRIPTION" to="Sprite3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="StaticBody3D" to="StaticBody3D" method="can_process"]
+[connection signal="ready" from="StaticBody3DDESCRIPTION" to="StaticBody3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="SubViewportContainer" to="SubViewportContainer" method="can_process"]
+[connection signal="ready" from="SubViewportContainerDESCRIPTION" to="SubViewportContainerDESCRIPTION" method="can_process"]
+[connection signal="ready" from="TabContainer" to="TabContainer" method="can_process"]
+[connection signal="ready" from="TabContainerDESCRIPTION" to="TabContainerDESCRIPTION" method="can_process"]
+[connection signal="ready" from="TextureButton" to="TextureButton" method="can_process"]
+[connection signal="ready" from="TextureButtonDESCRIPTION" to="TextureButtonDESCRIPTION" method="can_process"]
+[connection signal="ready" from="TextureRect" to="TextureRect" method="can_process"]
+[connection signal="ready" from="TextureRectDESCRIPTION" to="TextureRectDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Timer" to="Timer" method="can_process"]
+[connection signal="ready" from="TimerDESCRIPTION" to="TimerDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Tree" to="Tree" method="can_process"]
+[connection signal="ready" from="TreeDESCRIPTION" to="TreeDESCRIPTION" method="can_process"]
+[connection signal="ready" from="VFlowContainer" to="VFlowContainer" method="can_process"]
+[connection signal="ready" from="VFlowContainerDESCRIPTION" to="VFlowContainerDESCRIPTION" method="can_process"]
+[connection signal="ready" from="VSeparator" to="VSeparator" method="can_process"]
+[connection signal="ready" from="VSeparatorDESCRIPTION" to="VSeparatorDESCRIPTION" method="can_process"]
+[connection signal="ready" from="VSplitContainer" to="VSplitContainer" method="can_process"]
+[connection signal="ready" from="VSplitContainerDESCRIPTION" to="VSplitContainerDESCRIPTION" method="can_process"]
+[connection signal="ready" from="VehicleWheel3D" to="VehicleWheel3D" method="can_process"]
+[connection signal="ready" from="VehicleWheel3DDESCRIPTION" to="VehicleWheel3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="VisibleOnScreenEnabler2D" to="VisibleOnScreenEnabler2D" method="can_process"]
+[connection signal="ready" from="VisibleOnScreenEnabler2DDESCRIPTION" to="VisibleOnScreenEnabler2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="VisibleOnScreenNotifier2D" to="VisibleOnScreenNotifier2D" method="can_process"]
+[connection signal="ready" from="VisibleOnScreenNotifier2DDESCRIPTION" to="VisibleOnScreenNotifier2DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="VisualInstance3D" to="VisualInstance3D" method="can_process"]
+[connection signal="ready" from="VisualInstance3DDESCRIPTION" to="VisualInstance3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="Window" to="Window" method="can_process"]
+[connection signal="ready" from="WindowDESCRIPTION" to="WindowDESCRIPTION" method="can_process"]
+[connection signal="ready" from="XRAnchor3D" to="XRAnchor3D" method="can_process"]
+[connection signal="ready" from="XRAnchor3DDESCRIPTION" to="XRAnchor3DDESCRIPTION" method="can_process"]
+[connection signal="ready" from="XRController3D" to="XRController3D" method="can_process"]
+[connection signal="ready" from="XRController3DDESCRIPTION" to="XRController3DDESCRIPTION" method="can_process"]

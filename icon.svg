@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1080 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Artboard2" transform="matrix(1,0,0,1,-1392,0)">
+        <rect x="1392" y="0" width="1080" height="1080" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="1392" y="0" width="1080" height="1080"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g transform="matrix(1,0,0,1,1392,-1.06581e-13)">
+                <path d="M1080,97.515L1080,982.485C1080,1036.31 1036.31,1080 982.485,1080L97.515,1080C43.695,1080 0,1036.31 0,982.485L0,97.515C0,43.695 43.695,0 97.515,0L982.485,0C1036.31,0 1080,43.695 1080,97.515Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(0.90241,0,0,0.90241,1444.7,52.6988)">
+                <path d="M1080,97.515L1080,982.485C1080,1036.31 1036.31,1080 982.485,1080L97.515,1080C43.695,1080 0,1036.31 0,982.485L0,97.515C0,43.695 43.695,0 97.515,0L982.485,0C1036.31,0 1080,43.695 1080,97.515Z"/>
+            </g>
+            <g id="BG" transform="matrix(5.64316,0,0,5.64316,6094.8,-3755.49)">
+                <g opacity="0.2">
+                    <g transform="matrix(1,0,0,1,-1391.95,-34.4526)">
+                        <text x="604.182px" y="875.692px" style="font-family:'MalgunGothic', 'Malgun Gothic', sans-serif;font-size:100px;fill:white;">丸</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-1534.54,-5.26182)">
+                        <text x="698.727px" y="764.177px" style="font-family:'MalgunGothic', 'Malgun Gothic', sans-serif;font-size:100px;fill:white;">ギヌ</text>
+                    </g>
+                </g>
+            </g>
+            <g id="EditorCommentSceneTreeViewIcon.svg" transform="matrix(28.776,7.71052,-7.71052,28.776,2152.39,788.108)">
+                <g transform="matrix(1,0,0,1,-8,-8)">
+                    <g transform="matrix(0.875,0,0,0.823529,1,1)">
+                        <path d="M8.862,17L2.767,17L2.802,0L12.427,0L16,3.516L16,9.405L9.494,9.405C9.145,9.405 8.862,9.706 8.862,10.077L8.862,17ZM16,10.748L16,10.76L10.127,17L10.126,10.748L16,10.748Z" style="fill:rgb(224,224,224);"/>
+                    </g>
+                    <path d="M15,2.772L15,4.627L5.763,4.406L6.041,13.623L4.67,15L2.772,15C1.794,15 1,14.206 1,13.228L1,2.772C1,1.794 1.794,1 2.772,1L13.228,1C14.206,1 15,1.794 15,2.772Z" style="fill:rgb(224,224,224);"/>
+                </g>
+            </g>
+            <g id="IncomingConnectionsSceneTreeViewIcon.svg" transform="matrix(32.0331,-8.58324,8.58324,32.0331,1798.54,340.901)">
+                <g transform="matrix(1,0,0,1,-8,-8)">
+                    <g transform="matrix(1,0,0,1,-0.285222,0.536616)">
+                        <path d="M1.976,3.297C4.608,6.074 4.479,8.852 1.976,11.63" style="fill:none;stroke:rgb(224,224,224);stroke-width:2.08px;"/>
+                    </g>
+                    <g transform="matrix(0.602424,0,0,0.602424,4.41857,3.50388)">
+                        <path d="M1.976,3.297C4.608,6.074 4.479,8.852 1.976,11.63" style="fill:none;stroke:rgb(224,224,224);stroke-width:3.46px;"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-0.719565,0)">
+                        <path d="M8.742,4.819C9.505,3.557 12.366,1.218 14.582,4.819C16.049,7.203 13.504,10.778 12.688,11.615C11.99,12.331 11.583,14.735 9.689,11.615" style="fill:none;stroke:rgb(224,224,224);stroke-width:2.08px;"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-0.719565,0)">
+                        <path d="M10.327,9.229C11.261,8.691 12.356,7.924 10.352,7.36" style="fill:none;stroke:rgb(224,224,224);stroke-width:2.08px;"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
