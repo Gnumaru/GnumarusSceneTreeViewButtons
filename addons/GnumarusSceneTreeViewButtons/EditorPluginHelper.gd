@@ -11,13 +11,14 @@ class TreeItemInfo:
 	var node: Node
 
 
-const DEBUG_VERBOSE: bool = false
+const DEBUG_VERBOSE: bool = true
 const IGNORE_CONNECTIONS_TO_NATIVE_METHODS: bool = false
 
 var TreeItemHelper: GDScript
 
 var mdescriptionbtntex: Texture2D
 var mincomingconnectionsbtntex: Texture2D
+var mmetasbtntex: Texture2D
 
 var meditedscenetreetree: Tree
 
@@ -33,6 +34,7 @@ func _init() -> void:
 	TreeItemHelper = load(maddondir + "/TreeItemHelper.gd")
 	mdescriptionbtntex = load(maddondir + "/EditorCommentSceneTreeViewIcon.svg")
 	mincomingconnectionsbtntex = load(maddondir + "/IncomingConnectionsSceneTreeViewIcon.svg")
+	mmetasbtntex = load(maddondir + "/MetasSceneTreeViewIcon.svg")
 	mitemstobtnmap = {}
 
 
@@ -41,6 +43,7 @@ func _print(pafter: Variant, pbefore: Variant = "") -> void:
 
 
 func on_scene_view_tree_rebuilt():
+	_print("on_scene_view_tree_rebuilt()")
 	var vlow_processor_usage_mode: bool = OS.low_processor_usage_mode
 	OS.low_processor_usage_mode = false
 	# waiting some frames since the previous tree predelete is called BEFORE the tree is deleted
@@ -53,6 +56,7 @@ func on_scene_view_tree_rebuilt():
 func update():
 	var vnowms: int = Time.get_ticks_msec()
 	var vcureditedscene = Engine.get_main_loop().edited_scene_root
+
 	if vcureditedscene != mlasteditedscene:
 		mlastchecktimems = vnowms
 		setup()
@@ -66,13 +70,22 @@ func update():
 
 func setup():
 	var veditorrootwindow: Window = Engine.get_main_loop().root
-	meditedscenetreetree = get_scene_tree_view_tree_control()
+	if not is_instance_valid(meditedscenetreetree):
+		meditedscenetreetree = get_scene_tree_view_tree_control()
+	if not is_instance_valid(meditedscenetreetree):
+		print('couldnt find scene tree view')
+		return
 	if not meditedscenetreetree.button_clicked.is_connected(on_button_clicked):
 		meditedscenetreetree.button_clicked.connect(on_button_clicked)
 	var vscenetreeitem: TreeItem = meditedscenetreetree.get_root()
+	if not is_instance_valid(vscenetreeitem):
+		# can be invalid uppon opening the editor the fist time
+		return
+	var vcolumn: int = 0
+	mlasteditedscene = veditorrootwindow.get_node(vscenetreeitem.get_metadata(vcolumn))
 	if not is_instance_valid(vscenetreeitem) or vscenetreeitem.get_script() == TreeItemHelper:
 		return
-	_print("setup()")
+	#_print("setup()")
 	clean_invalid_tree_items()
 	vscenetreeitem.set_script(TreeItemHelper)
 	# predelete.connect() won't work for unknow reasons, it says it cant find connect() on Signal
@@ -80,20 +93,21 @@ func setup():
 
 	var mnextbtnid: int = 100  # 2147483647
 	var vinc: int = +1  # -1
-	var vcolumn: int = 0
 
 	while is_instance_valid(vscenetreeitem):
 		var vnodepath: NodePath = vscenetreeitem.get_metadata(vcolumn) as NodePath
 		var vnode: Node = veditorrootwindow.get_node(vnodepath)
 		var vbtncount: int = vscenetreeitem.get_button_count(vcolumn)
 
-		var vhasdescriptiontxt = vnode.editor_description.length() > 0
-		var vhasincomingconnections = (
+		var vhasdescriptiontxt:bool = vnode.editor_description.length() > 0
+		var vhasincomingconnections:bool = (
 			vnode.get_incoming_connections().filter(connection_filter).size() > 0
 		)
+		var vhasmeta:bool = vnode.get_meta_list().filter(meta_filter).size() > 0
 
 		var vhasdescriptionbtn: bool = false
 		var vhasincomingconnectionsbtn: bool = false
+		var vhasmetabtn: bool = false
 
 		for i in vscenetreeitem.get_button_count(vcolumn):
 			var vbtntooltip: String = vscenetreeitem.get_button_tooltip_text(vcolumn, i)
@@ -102,6 +116,8 @@ func setup():
 					vhasdescriptionbtn = true
 				"incoming_connections":
 					vhasincomingconnectionsbtn = true
+				"metas":
+					vhasmetabtn = true
 
 		var vtreeinfo: TreeItemInfo = TreeItemInfo.new()
 		vtreeinfo.btns_ids = {}
@@ -129,93 +145,31 @@ func setup():
 			)
 			mnextbtnid += vinc
 
+		if vhasmeta and not vhasmetabtn:
+			while vscenetreeitem.get_button_by_id(vcolumn, mnextbtnid) >= 0:
+				mnextbtnid += vinc
+			vtreeinfo.btns_ids.metas = mnextbtnid
+			vscenetreeitem.add_button(
+				vcolumn, mmetasbtntex, mnextbtnid, false, "metas"
+			)
+			mnextbtnid += vinc
+
 		vscenetreeitem = vscenetreeitem.get_next_visible()
 
 
-func connection_filter(pdictionary: Dictionary) -> bool:
-	var vsig: Signal = pdictionary.signal
-	var vsignaler: Object = vsig.get_object()
-
-	if not vsignaler is Node:
-		return false
-
-	var vmet: Callable = pdictionary.callable
-	var vmetname: String = vmet.get_method()
-
-	if IGNORE_CONNECTIONS_TO_NATIVE_METHODS and "::" in vmetname:
-		return false
-
-	var vmetobj: Object = vmet.get_object()
-	var vsigname: String = vsig.get_name()
-
-	# canvasitem
-	if (
-		vsignaler == vmetobj.get_parent()
-		and vsigname == "item_rect_changed"
-		and vmetname == "Control::_size_changed"
-	):
-		return false
-
-	# xrcamera3d
-	if vsigname == "size_changed" and vmetname == "Camera3D::update_gizmos":  # TODO check signaler
-		return false
-
-	# vsplitcontainer
-	if vsigname == "size_flags_changed" and vmetname == "Container::queue_sort":  # TODO check signaler
-		return false
-	if vsigname == "minimum_size_changed" and vmetname == "Container::_child_minsize_changed":  # TODO check signaler
-		return false
-	if vsigname == "visibility_changed" and vmetname == "Container::_child_minsize_changed":  # TODO check signaler
-		return false
-
-	# tree
-	if vsigname == "timeout" and vmetname == "Tree::_range_click_timeout":  # TODO check signaler
-		return false
-	if vsigname == "value_changed" and vmetname == "Tree::_scroll_moved":  # TODO check signaler
-		return false
-	if vsigname == "value_changed" and vmetname == "Tree::value_editor_changed":  # TODO check signaler
-		return false
-	if vsigname == "text_submitted" and vmetname == "Tree::_line_editor_submit":  # TODO check signaler
-		return false
-	if vsigname == "gui_input" and vmetname == "Tree::_text_editor_gui_input":  # TODO check signaler
-		return false
-	if vsigname == "popup_hide" and vmetname == "Tree::_text_editor_popup_modal_close":  # TODO check signaler
-		return false
-	if vsigname == "id_pressed" and vmetname == "Tree::popup_select":  # TODO check signaler
-		return false
-
-	# TODO setup all the exclusions bellow =O =(
-	# textedit
-	# tabcontainer
-	# tabbar
-	# spinbox
-	# scrollcontainer
-	# richtextlabel
-	# popuppanel
-	# popupmenu
-	# popup
-	# pathfollow2d
-	# optionbutton
-	# menubutton
-	# label3d
-	# itemlist
-	# httprequest
-	# graphedit
-	# filedialog
-	# confirmationdialog
-	# colorpicker
-	# codeedit
-	# acceptdialog
-	if vsigname == "pressed" and vmetname == "AcceptDialog::_ok_pressed":  # TODO check signaler
-		return false
-	if vsigname == "window_input" and vmetname == "AcceptDialog::_input_from_window":  # TODO check signaler
-		return false
-	if vsigname == "child_order_changed" and vmetname == "Viewport::gui_set_root_order_dirty":  # TODO check signaler
-		return false
-	if vsigname == "child_order_changed" and vmetname == "Viewport::canvas_parent_mark_dirty":  # TODO check signaler
-		return false
-
+func meta_filter(pmetaname: String) -> bool:
+	match pmetaname:
+		"_edit_lock_":
+			return false
+		"_edit_group_":
+			return false
+		"_aseprite_wizard_interface_config_":
+			# from the aseprite AsepriteWizard addon
+			return false
 	return true
+
+
+
 
 
 func on_editor_description_clicked(ptreeiteminfo: TreeItemInfo):
@@ -247,9 +201,28 @@ func _alert(ptext: String, ptitle: String = "Message") -> void:
 	vdiag.popup_centered()
 
 
+func on_metas_clicked(ptreeiteminfo: TreeItemInfo):
+	var vnode = ptreeiteminfo.node
+	var vsceneroot: Node = vnode.owner
+	if not is_instance_valid(vsceneroot):
+		vsceneroot = vnode
+	var vnodepathfromsceneroot = str(vsceneroot.get_path_to(vnode))
+	if vnodepathfromsceneroot == '.':
+		vnodepathfromsceneroot += ' (%s)'%vnode.name
+
+	var vdict:Dictionary = {}
+	for imetaname:String in vnode.get_meta_list().filter(meta_filter):
+		vdict[imetaname] = vnode.get_meta(imetaname)
+	var vmsg:String = "metas for %s\n%s\n"%[vnodepathfromsceneroot, vdict]
+	print(vmsg)
+	_alert(vmsg, "metas for %s" % vnodepathfromsceneroot)
+
+
 func on_incoming_connections_clicked(ptreeiteminfo: TreeItemInfo):
 	var vnode = ptreeiteminfo.node
 	var vsceneroot: Node = vnode.owner
+	if not is_instance_valid(vsceneroot):
+		vsceneroot = vnode
 	var vnodepathfromsceneroot = vsceneroot.get_path_to(vnode)
 	var vcons_info = ptreeiteminfo.node.get_incoming_connections().filter(connection_filter)
 
@@ -269,6 +242,7 @@ func on_incoming_connections_clicked(ptreeiteminfo: TreeItemInfo):
 		)
 		vmsg += "  %s\n  %s\n\n" % [vsigpath, vmetpath]
 		#print(' %s\n %s\n'%[vsigpath, vmetpath])
+		print('if vsigname == "%s" and vmetname == "%s": return false'%[vsig.get_name(), iconinfo.callable.get_method()])
 
 	vmsg += "\n"
 	print(vmsg)
@@ -295,6 +269,9 @@ func on_button_clicked(
 			"incoming_connections":
 				if pbtnid == vtreeiteminfo.btns_ids.incoming_connections:
 					on_incoming_connections_clicked(vtreeiteminfo)
+			"metas":
+				if pbtnid == vtreeiteminfo.btns_ids.metas:
+					on_metas_clicked(vtreeiteminfo)
 
 	clean_invalid_tree_items()
 
@@ -306,6 +283,7 @@ func clean_invalid_tree_items():
 
 
 func get_scene_tree_view_tree_control() -> Tree:
+	# diferent from, say, the inspector, which has a editor interface getter (EditorInterface.get_inspector()) there is no getter for the SceneTreeDock which even has a properly named node "Scene"
 	return get_node_robust(
 		Engine.get_main_loop().root,
 		[
@@ -325,29 +303,34 @@ func get_scene_tree_view_tree_control() -> Tree:
 
 
 func get_editor_description_button() -> Button:
-	return get_node_robust(
-		Engine.get_main_loop().root,
+	# TODO: instead of Engine.get_main_loop().root, use EditorInterface.get_inspector() and search from there with a much shorter path
+	var v = get_node_robust(
+		EditorInterface.get_inspector(),
 		[
 			#name childindex nativeclass classname forwardsearch skipcount
-			["@EditorNode@17147", 0, null, "EditorNode", true, 0],
-			["@Panel@13", 4, Panel, "Panel", true, 0],
-			["@VBoxContainer@14", 0, VBoxContainer, "VBoxContainer", true, 0],
-			["@HSplitContainer@17", 1, HSplitContainer, "HSplitContainer", true, 0],
-			["@HSplitContainer@25", 1, HSplitContainer, "HSplitContainer", true, 0],
-			["@HSplitContainer@33", 1, HSplitContainer, "HSplitContainer", true, 0],
-			["@HSplitContainer@38", 1, HSplitContainer, "HSplitContainer", true, 0],
-			["@VSplitContainer@40", 0, VSplitContainer, "VSplitContainer", true, 0],
-			["@TabContainer@42", 0, TabContainer, "TabContainer", true, 0],
-			["Inspector", 1, null, "InspectorDock", true, 0],
-			["@EditorInspector@5441", -1, EditorInspector, "EditorInspector", false, 0],
 			["@VBoxContainer@5440", 0, VBoxContainer, "VBoxContainer", true, 0],
-			["@EditorInspectorSection@22022", -4, null, "EditorInspectorSection", false, 0],
+			["@EditorInspectorSection@22022", -2, null, "EditorInspectorSection", false, 1],
 			["@VBoxContainer@22023", 0, VBoxContainer, "VBoxContainer", true, 0],
 			["@EditorPropertyMultilineText@22032", 0, null, "EditorPropertyMultilineText", true, 0],
 			["@HBoxContainer@22024", 0, HBoxContainer, "HBoxContainer", true, 0],
 			["@Button@22031", -1, Button, "Button", false, 0]
 		]
 	)
+	if not is_instance_valid(v):
+		print("trying again")
+		v = get_node_robust(
+		EditorInterface.get_inspector(),
+		[
+			#name childindex nativeclass classname forwardsearch skipcount
+			["@VBoxContainer@5440", 0, VBoxContainer, "VBoxContainer", true, 0],
+			["@EditorInspectorSection@22022", -2, null, "EditorInspectorSection", false, 0],
+			["@VBoxContainer@22023", 0, VBoxContainer, "VBoxContainer", true, 0],
+			["@EditorPropertyMultilineText@22032", 0, null, "EditorPropertyMultilineText", true, 0],
+			["@HBoxContainer@22024", 0, HBoxContainer, "HBoxContainer", true, 0],
+			["@Button@22031", -1, Button, "Button", false, 0]
+		]
+	)
+	return v
 
 
 func type_check(p: Node, pnativeclass: Variant, pclassname: String) -> Node:
@@ -414,7 +397,7 @@ func get_node_robust(proot: Node, ppath: Array) -> Node:
 					#print('wrong nativeclass. expected %s got %s'%[vclassname, vchild.get_class()])
 					if ifwdidx == vcurrent.get_child_count() - 1:
 						if DEBUG_VERBOSE:
-							print("no more childrent")
+							print("no more children")
 					continue
 				if (
 					not vclassname.is_empty()
@@ -424,7 +407,7 @@ func get_node_robust(proot: Node, ppath: Array) -> Node:
 						print("wrong classname %s, %s" % [vclassname, vchild.get_class()])
 					if ifwdidx == vcurrent.get_child_count() - 1:
 						if DEBUG_VERBOSE:
-							print("no more childrent")
+							print("no more children")
 					continue
 				if vremskips <= 0:
 					vnext = vchild
@@ -440,7 +423,7 @@ func get_node_robust(proot: Node, ppath: Array) -> Node:
 					vremskips -= 1
 					if ifwdidx == vcurrent.get_child_count() - 1:
 						if DEBUG_VERBOSE:
-							print("no more childrent")
+							print("no more children")
 		else:
 			for ibackidx in range(vcurrent.get_child_count() - 1, -1, -1):
 				var vchild = vcurrent.get_child(ibackidx)
@@ -471,3 +454,165 @@ func get_node_robust(proot: Node, ppath: Array) -> Node:
 				print('failed at step "%s" of path (%s)' % [ipathstepidx, vparams])
 			return null
 	return vcurrent
+
+
+func connection_filter(pdictionary: Dictionary) -> bool:
+	var vsig: Signal = pdictionary.signal
+	var vsignaler: Object = vsig.get_object()
+
+	if not vsignaler is Node:
+		return false
+
+	var vmet: Callable = pdictionary.callable
+	var vmetname: String = vmet.get_method()
+
+	if IGNORE_CONNECTIONS_TO_NATIVE_METHODS and "::" in vmetname:
+		return false
+
+	var vmetobj: Object = vmet.get_object()
+	var vsigname: String = vsig.get_name()
+
+	if vmetobj is CanvasItem:
+		if (
+			vsignaler == vmetobj.get_parent()
+			and vsigname == "item_rect_changed"
+			and vmetname == "Control::_size_changed"
+		):
+			return false
+	if vmetobj is Container:
+		if vsigname == "size_flags_changed" and vmetname == "Container::queue_sort": return false
+		if vsigname == "minimum_size_changed" and vmetname == "Container::_child_minsize_changed": return false
+		if vsigname == "visibility_changed" and vmetname == "Container::_child_minsize_changed": return false
+	if vmetobj is Camera3D:
+		if vsigname == "size_changed" and vmetname == "Camera3D::update_gizmos": return false
+	if vmetobj is Tree:
+		if vsigname == "timeout" and vmetname == "Tree::_range_click_timeout": return false
+		if vsigname == "value_changed" and vmetname == "Tree::_scroll_moved": return false
+		if vsigname == "text_submitted" and vmetname == "Tree::_line_editor_submit": return false
+		if vsigname == "gui_input" and vmetname == "Tree::_text_editor_gui_input": return false
+		if vsigname == "popup_hide" and vmetname == "Tree::_text_editor_popup_modal_close": return false
+		if vsigname == "id_pressed" and vmetname == "Tree::popup_select": return false
+		if vsigname == "value_changed" and vmetname == "Tree::value_editor_changed": return false
+	if vmetobj is TextEdit:
+		if vsigname == "value_changed" and vmetname == "TextEdit::_scroll_moved": return false
+		if vsigname == "scrolling" and vmetname == "TextEdit::_v_scroll_input": return false
+		if vsigname == "timeout" and vmetname == "TextEdit::_toggle_draw_caret": return false
+		if vsigname == "timeout" and vmetname == "TextEdit::_click_selection_held": return false
+		if vsigname == "timeout" and vmetname == "TextEdit::_push_current_op": return false
+	if vmetobj is TabContainer:
+		if vsigname == "tab_changed" and vmetname == "TabContainer::_on_tab_changed": return false
+		if vsigname == "tab_clicked" and vmetname == "TabContainer::_on_tab_clicked": return false
+		if vsigname == "tab_hovered" and vmetname == "TabContainer::_on_tab_hovered": return false
+		if vsigname == "tab_selected" and vmetname == "TabContainer::_on_tab_selected": return false
+		if vsigname == "tab_button_pressed" and vmetname == "TabContainer::_on_tab_button_pressed": return false
+		if vsigname == "active_tab_rearranged" and vmetname == "TabContainer::_on_active_tab_rearranged": return false
+		if vsigname == "mouse_exited" and vmetname == "TabContainer::_on_mouse_exited": return false
+	if vmetobj is TabBar:
+		if vsigname == "mouse_exited" and vmetname == "TabBar::_on_mouse_exited": return false
+	if vmetobj is SpinBox:
+		if vsigname == "text_submitted" and vmetname == "SpinBox::_text_submitted": return false
+		if vsigname == "focus_entered" and vmetname == "SpinBox::_line_edit_focus_enter": return false
+		if vsigname == "focus_exited" and vmetname == "SpinBox::_line_edit_focus_exit": return false
+		if vsigname == "gui_input" and vmetname == "SpinBox::_line_edit_input": return false
+		if vsigname == "timeout" and vmetname == "SpinBox::_range_click_timeout": return false
+	if vmetobj is ScrollContainer:
+		if vsigname == "value_changed" and vmetname == "ScrollContainer::_scroll_moved": return false
+		if vsigname == "gui_focus_changed" and vmetname == "ScrollContainer::_gui_focus_changed": return false
+	if vmetobj is RichTextLabel:
+		if vsigname == "value_changed" and vmetname == "RichTextLabel::_scroll_changed": return false
+	if vmetobj is Viewport:
+		if vsigname == "child_order_changed" and vmetname == "Viewport::gui_set_root_order_dirty": return false
+		if vsigname == "child_order_changed" and vmetname == "Viewport::canvas_parent_mark_dirty": return false
+	if vmetobj is PopupMenu:
+		if vsigname == "draw" and vmetname == "PopupMenu::_draw_background": return false
+		if vsigname == "draw" and vmetname == "PopupMenu::_draw_items": return false
+		if vsigname == "window_input" and vmetname == "PopupMenu::gui_input": return false
+		if vsigname == "timeout" and vmetname == "PopupMenu::_submenu_timeout": return false
+		if vsigname == "timeout" and vmetname == "PopupMenu::_minimum_lifetime_timeout": return false
+	if vmetobj is Popup:
+		if vsigname == "window_input" and vmetname == "Popup::_input_from_window": return false
+	if vmetobj is PathFollow2D:
+		if vsigname == "timeout" and vmetname == "PathFollow2D::_update_transform": return false
+	if vmetobj is BaseButton:
+		if vsigname == "popup_hide" and vmetname == "BaseButton::set_pressed": return false
+	if vmetobj is OptionButton:
+		if vsigname == "index_pressed" and vmetname == "OptionButton::_selected": return false
+		if vsigname == "id_focused" and vmetname == "OptionButton::_focused": return false
+	if vmetobj is MenuButton:
+		if vsigname == "about_to_popup" and vmetname == "MenuButton::_popup_visibility_changed": return false
+		if vsigname == "popup_hide" and vmetname == "MenuButton::_popup_visibility_changed": return false
+	if vmetobj is Label3D:
+		if vsigname == "size_changed" and vmetname == "Label3D::_font_changed": return false
+	if vmetobj is ItemList:
+		if vsigname == "value_changed" and vmetname == "ItemList::_scroll_changed": return false
+		if vsigname == "mouse_exited" and vmetname == "ItemList::_mouse_exited": return false
+	if vmetobj is HTTPRequest:
+		if vsigname == "timeout" and vmetname == "HTTPRequest::_timeout": return false
+	if vmetobj is GraphEdit:
+		if vsigname == "draw" and vmetname == "GraphEdit::_top_layer_draw": return false
+		if vsigname == "gui_input" and vmetname == "GraphEdit::_top_layer_input": return false
+		if vsigname == "draw" and vmetname == "GraphEdit::_connections_layer_draw": return false
+		if vsigname == "value_changed" and vmetname == "GraphEdit::_scroll_moved": return false
+		if vsigname == "pressed" and vmetname == "GraphEdit::_zoom_minus": return false
+		if vsigname == "pressed" and vmetname == "GraphEdit::_zoom_reset": return false
+		if vsigname == "pressed" and vmetname == "GraphEdit::_zoom_plus": return false
+		if vsigname == "pressed" and vmetname == "GraphEdit::_show_grid_toggled": return false
+		if vsigname == "pressed" and vmetname == "GraphEdit::_snapping_toggled": return false
+		if vsigname == "value_changed" and vmetname == "GraphEdit::_snapping_distance_changed": return false
+		if vsigname == "pressed" and vmetname == "GraphEdit::_minimap_toggled": return false
+		if vsigname == "pressed" and vmetname == "GraphEdit::arrange_nodes": return false
+		if vsigname == "draw" and vmetname == "GraphEdit::_minimap_draw": return false
+	if vmetobj is FileDialog:
+		if vsigname == "pressed" and vmetname == "FileDialog::_go_back": return false
+		if vsigname == "pressed" and vmetname == "FileDialog::_go_forward": return false
+		if vsigname == "pressed" and vmetname == "FileDialog::_go_up": return false
+		if vsigname == "item_selected" and vmetname == "FileDialog::_select_drive": return false
+		if vsigname == "pressed" and vmetname == "FileDialog::update_file_list": return false
+		if vsigname == "toggled" and vmetname == "FileDialog::set_show_hidden_files": return false
+		if vsigname == "pressed" and vmetname == "FileDialog::_make_dir": return false
+		if vsigname == "confirmed" and vmetname == "FileDialog::_action_pressed": return false
+		if vsigname == "multi_selected" and vmetname == "FileDialog::_tree_multi_selected": return false
+		if vsigname == "cell_selected" and vmetname == "FileDialog::_tree_selected": return false
+		if vsigname == "item_activated" and vmetname == "FileDialog::_tree_item_activated": return false
+		if vsigname == "nothing_selected" and vmetname == "FileDialog::deselect_all": return false
+		if vsigname == "text_submitted" and vmetname == "FileDialog::_dir_submitted": return false
+		if vsigname == "text_submitted" and vmetname == "FileDialog::_file_submitted": return false
+		if vsigname == "item_selected" and vmetname == "FileDialog::_filter_selected": return false
+		if vsigname == "confirmed" and vmetname == "FileDialog::_save_confirm_pressed": return false
+		if vsigname == "confirmed" and vmetname == "FileDialog::_make_dir_confirm": return false
+	if vmetobj is ColorPicker:
+		if vsigname == "draw"and vmetname == "ColorPicker::_hsv_draw": return false
+		if vsigname == "pressed" and vmetname == "ColorPicker::_pick_button_pressed" : return false
+		if vsigname == "gui_input" and vmetname == "ColorPicker::_sample_input" : return false
+		if vsigname == "draw" and vmetname == "ColorPicker::_sample_draw" : return false
+		if vsigname == "id_pressed" and vmetname == "ColorPicker::set_picker_shape" : return false
+		if vsigname == "pressed" and vmetname == "ColorPicker::set_color_mode" : return false
+		if vsigname == "id_pressed" and vmetname == "ColorPicker::_set_mode_popup_value" : return false
+		if vsigname == "drag_started" and vmetname == "ColorPicker::_slider_drag_started" : return false
+		if vsigname == "value_changed" and vmetname == "ColorPicker::_slider_value_changed" : return false
+		if vsigname == "drag_ended" and vmetname == "ColorPicker::_slider_drag_ended" : return false
+		if vsigname == "draw" and vmetname == "ColorPicker::_slider_draw" : return false
+		if vsigname == "gui_input" and vmetname == "ColorPicker::_line_edit_input" : return false
+		if vsigname == "gui_input" and vmetname == "ColorPicker::_slider_or_spin_input" : return false
+		if vsigname == "pressed" and vmetname == "ColorPicker::_text_type_toggled" : return false
+		if vsigname == "text_submitted" and vmetname == "ColorPicker::_html_submitted" : return false
+		if vsigname == "text_changed" and vmetname == "ColorPicker::_text_changed" : return false
+		if vsigname == "focus_exited" and vmetname == "ColorPicker::_html_focus_exit" : return false
+		if vsigname == "draw" and vmetname == "ColorPicker::_hsv_draw" : return false
+		if vsigname == "gui_input" and vmetname == "ColorPicker::_uv_input" : return false
+		if vsigname == "gui_input" and vmetname == "ColorPicker::_w_input" : return false
+		if vsigname == "toggled" and vmetname == "ColorPicker::_show_hide_preset" : return false
+		if vsigname == "pressed" and vmetname == "ColorPicker::_add_preset_pressed": return false
+	if vmetobj is CodeEdit:
+		if vsigname == "lines_edited_from" and vmetname == "CodeEdit::_lines_edited_from": return false
+		if vsigname == "text_set" and vmetname == "CodeEdit::_text_set": return false
+		if vsigname == "text_changed" and vmetname == "CodeEdit::_text_changed": return false
+		if vsigname == "gutter_clicked" and vmetname == "CodeEdit::_gutter_clicked": return false
+		if vsigname == "gutter_added" and vmetname == "CodeEdit::_update_gutter_indexes": return false
+		if vsigname == "gutter_removed" and vmetname == "CodeEdit::_update_gutter_indexes": return false
+	if vmetobj is AcceptDialog:
+		if vsigname == "visibility_changed" and vmetname == "AcceptDialog::_custom_button_visibility_changed" : return false
+		if vsigname == "pressed" and vmetname == "AcceptDialog::_cancel_pressed" : return false
+		if vsigname == "pressed" and vmetname == "AcceptDialog::_ok_pressed": return false
+		if vsigname == "window_input" and vmetname == "AcceptDialog::_input_from_window": return false
+	return true

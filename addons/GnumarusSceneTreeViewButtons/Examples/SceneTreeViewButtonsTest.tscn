@@ -3,109 +3,145 @@
 [node name="Node2D" type="Node2D"]
 visible = false
 
+[node name="Node" type="Node" parent="."]
+
+[node name="Node2" type="Node" parent="."]
+editor_description = "@Node@17:<Node#159584881702>"
+
+[node name="Node3" type="Node" parent="."]
+
+[node name="Node4" type="Node" parent="."]
+editor_description = "@Node@19:<Node#159618436136>"
+
+[node name="Node5" type="Node" parent="."]
+metadata/some_meta = 44
+
+[node name="Node6" type="Node" parent="."]
+editor_description = "@Node@21:<Node#159651990570>"
+metadata/some_meta = 30
+
+[node name="Node7" type="Node" parent="."]
+metadata/some_meta = 3
+
+[node name="Node8" type="Node" parent="."]
+editor_description = "@Node@23:<Node#159685545004>"
+metadata/some_meta = 47
+
 [node name="AcceptDialog" type="AcceptDialog" parent="."]
+metadata/some_meta = 74
 
 [node name="AcceptDialogDESCRIPTION" type="AcceptDialog" parent="."]
-editor_description = "@AcceptDialog@35:<AcceptDialog#160138529863>"
+editor_description = "@AcceptDialog@43:<AcceptDialog#160272747599>"
+metadata/some_meta = 3
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
 visible = false
 
 [node name="AnimatableBody2DDESCRIPTION" type="AnimatableBody2D" parent="."]
-editor_description = "@AnimatableBody2D@37:<AnimatableBody2D#160457296986>"
+editor_description = "@AnimatableBody2D@45:<AnimatableBody2D#160591514722>"
 visible = false
 
 [node name="AnimatableBody3D" type="AnimatableBody3D" parent="."]
 visible = false
 
 [node name="AnimatableBody3DDESCRIPTION" type="AnimatableBody3D" parent="."]
-editor_description = "@AnimatableBody3D@39:<AnimatableBody3D#160507628637>"
+editor_description = "@AnimatableBody3D@47:<AnimatableBody3D#160641846373>"
 visible = false
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 visible = false
+metadata/some_meta = 29
 
 [node name="AnimatedSprite2DDESCRIPTION" type="AnimatedSprite2D" parent="."]
-editor_description = "@AnimatedSprite2D@41:<AnimatedSprite2D#160557960288>"
+editor_description = "@AnimatedSprite2D@49:<AnimatedSprite2D#160692178024>"
 visible = false
+metadata/some_meta = 37
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
 visible = false
 
 [node name="AnimatedSprite3DDESCRIPTION" type="AnimatedSprite3D" parent="."]
-editor_description = "@AnimatedSprite3D@43:<AnimatedSprite3D#160608291939>"
+editor_description = "@AnimatedSprite3D@51:<AnimatedSprite3D#160742509675>"
 visible = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [node name="AnimationPlayerDESCRIPTION" type="AnimationPlayer" parent="."]
-editor_description = "@AnimationPlayer@45:<AnimationPlayer#160658623590>"
+editor_description = "@AnimationPlayer@53:<AnimationPlayer#160792841326>"
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
+metadata/some_meta = 0
 
 [node name="AnimationTreeDESCRIPTION" type="AnimationTree" parent="."]
-editor_description = "@AnimationTree@47:<AnimationTree#160708955241>"
+editor_description = "@AnimationTree@55:<AnimationTree#160843172977>"
+metadata/some_meta = 98
 
 [node name="Area2D" type="Area2D" parent="."]
 visible = false
 
 [node name="Area2DDESCRIPTION" type="Area2D" parent="."]
-editor_description = "@Area2D@49:<Area2D#160759286892>"
+editor_description = "@Area2D@57:<Area2D#160893504628>"
 visible = false
 
 [node name="Area3D" type="Area3D" parent="."]
 visible = false
 
 [node name="Area3DDESCRIPTION" type="Area3D" parent="."]
-editor_description = "@Area3D@51:<Area3D#160809618543>"
+editor_description = "@Area3D@59:<Area3D#160943836279>"
 visible = false
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
 visible = false
+metadata/some_meta = 56
 
 [node name="AspectRatioContainerDESCRIPTION" type="AspectRatioContainer" parent="."]
-editor_description = "@AspectRatioContainer@53:<AspectRatioContainer#160893504628>"
+editor_description = "@AspectRatioContainer@61:<AspectRatioContainer#161027722364>"
 visible = false
+metadata/some_meta = 76
 
 [node name="AudioListener2D" type="AudioListener2D" parent="."]
 visible = false
 
 [node name="AudioListener2DDESCRIPTION" type="AudioListener2D" parent="."]
-editor_description = "@AudioListener2D@55:<AudioListener2D#160960613496>"
+editor_description = "@AudioListener2D@63:<AudioListener2D#161094831232>"
 visible = false
 
 [node name="AudioListener3D" type="AudioListener3D" parent="."]
 visible = false
 
 [node name="AudioListener3DDESCRIPTION" type="AudioListener3D" parent="."]
-editor_description = "@AudioListener3D@57:<AudioListener3D#161010945147>"
+editor_description = "@AudioListener3D@65:<AudioListener3D#161145162883>"
 visible = false
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+metadata/some_meta = 24
 
 [node name="AudioStreamPlayerDESCRIPTION" type="AudioStreamPlayer" parent="."]
-editor_description = "@AudioStreamPlayer@59:<AudioStreamPlayer#161061276798>"
+editor_description = "@AudioStreamPlayer@67:<AudioStreamPlayer#161195494534>"
+metadata/some_meta = 41
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 visible = false
 
 [node name="AudioStreamPlayer2DDESCRIPTION" type="AudioStreamPlayer2D" parent="."]
-editor_description = "@AudioStreamPlayer2D@61:<AudioStreamPlayer2D#161111608449>"
+editor_description = "@AudioStreamPlayer2D@69:<AudioStreamPlayer2D#161245826185>"
 visible = false
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 visible = false
 
 [node name="AudioStreamPlayer3DDESCRIPTION" type="AudioStreamPlayer3D" parent="."]
-editor_description = "@AudioStreamPlayer3D@63:<AudioStreamPlayer3D#161195494534>"
+editor_description = "@AudioStreamPlayer3D@71:<AudioStreamPlayer3D#161329712270>"
 visible = false
 
 [node name="BackBufferCopy" type="BackBufferCopy" parent="."]
 visible = false
+metadata/some_meta = 83
 
 [node name="BackBufferCopyDESCRIPTION" type="BackBufferCopy" parent="."]
-editor_description = "@BackBufferCopy@65:<BackBufferCopy#161262603402>"
+editor_description = "@BackBufferCopy@73:<BackBufferCopy#161396821138>"
 visible = false
+metadata/some_meta = 100
 
 [node name="BaseButton" type="BaseButton" parent="."]
 _import_path = NodePath("")
@@ -185,7 +221,7 @@ process_mode = 0
 process_priority = 0
 process_physics_priority = 0
 process_thread_group = 0
-editor_description = "@BaseButton@67:<BaseButton#161346489487>"
+editor_description = "@BaseButton@75:<BaseButton#161480707223>"
 visible = false
 modulate = Color(1, 1, 1, 1)
 self_modulate = Color(1, 1, 1, 1)
@@ -253,364 +289,398 @@ script = null
 visible = false
 
 [node name="Bone2DDESCRIPTION" type="Bone2D" parent="."]
-editor_description = "@Bone2D@69:<Bone2D#161413598355>"
+editor_description = "@Bone2D@77:<Bone2D#161547816091>"
 visible = false
 
 [node name="BoneAttachment3D" type="BoneAttachment3D" parent="."]
 visible = false
+metadata/some_meta = 29
 
 [node name="BoneAttachment3DDESCRIPTION" type="BoneAttachment3D" parent="."]
-editor_description = "@BoneAttachment3D@71:<BoneAttachment3D#161463930006>"
+editor_description = "@BoneAttachment3D@79:<BoneAttachment3D#161598147742>"
 visible = false
+metadata/some_meta = 38
 
 [node name="BoxContainer" type="BoxContainer" parent="."]
 visible = false
 
 [node name="BoxContainerDESCRIPTION" type="BoxContainer" parent="."]
-editor_description = "@BoxContainer@73:<BoxContainer#161547816091>"
+editor_description = "@BoxContainer@81:<BoxContainer#161682033827>"
 visible = false
 
 [node name="Button" type="Button" parent="."]
 visible = false
 
 [node name="ButtonDESCRIPTION" type="Button" parent="."]
-editor_description = "@Button@75:<Button#161682033827>"
+editor_description = "@Button@83:<Button#161816251563>"
 visible = false
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 visible = false
+metadata/some_meta = 50
 
 [node name="CPUParticles2DDESCRIPTION" type="CPUParticles2D" parent="."]
-editor_description = "@CPUParticles2D@77:<CPUParticles2D#161765919912>"
+editor_description = "@CPUParticles2D@85:<CPUParticles2D#161900137648>"
 visible = false
+metadata/some_meta = 94
 
 [node name="CPUParticles3D" type="CPUParticles3D" parent="."]
 visible = false
 
 [node name="CPUParticles3DDESCRIPTION" type="CPUParticles3D" parent="."]
-editor_description = "@CPUParticles3D@79:<CPUParticles3D#161816251563>"
+editor_description = "@CPUParticles3D@87:<CPUParticles3D#161950469299>"
 visible = false
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 visible = false
 
 [node name="CSGBox3DDESCRIPTION" type="CSGBox3D" parent="."]
-editor_description = "@CSGBox3D@81:<CSGBox3D#161866583214>"
+editor_description = "@CSGBox3D@89:<CSGBox3D#162000800950>"
 visible = false
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
 visible = false
+metadata/some_meta = 84
 
 [node name="CSGCombiner3DDESCRIPTION" type="CSGCombiner3D" parent="."]
-editor_description = "@CSGCombiner3D@83:<CSGCombiner3D#161916914865>"
+editor_description = "@CSGCombiner3D@91:<CSGCombiner3D#162051132601>"
 visible = false
+metadata/some_meta = 84
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
 visible = false
 
 [node name="CSGCylinder3DDESCRIPTION" type="CSGCylinder3D" parent="."]
-editor_description = "@CSGCylinder3D@85:<CSGCylinder3D#161967246516>"
+editor_description = "@CSGCylinder3D@93:<CSGCylinder3D#162101464252>"
 visible = false
 
 [node name="CSGMesh3D" type="CSGMesh3D" parent="."]
 visible = false
 
 [node name="CSGMesh3DDESCRIPTION" type="CSGMesh3D" parent="."]
-editor_description = "@CSGMesh3D@87:<CSGMesh3D#162017578167>"
+editor_description = "@CSGMesh3D@95:<CSGMesh3D#162151795903>"
 visible = false
 
 [node name="CSGPolygon3D" type="CSGPolygon3D" parent="."]
 visible = false
+metadata/some_meta = 61
 
 [node name="CSGPolygon3DDESCRIPTION" type="CSGPolygon3D" parent="."]
-editor_description = "@CSGPolygon3D@89:<CSGPolygon3D#162067909818>"
+editor_description = "@CSGPolygon3D@97:<CSGPolygon3D#162202127554>"
 visible = false
+metadata/some_meta = 73
 
 [node name="CSGSphere3D" type="CSGSphere3D" parent="."]
 visible = false
 
 [node name="CSGSphere3DDESCRIPTION" type="CSGSphere3D" parent="."]
-editor_description = "@CSGSphere3D@91:<CSGSphere3D#162118241469>"
+editor_description = "@CSGSphere3D@99:<CSGSphere3D#162252459205>"
 visible = false
 
 [node name="CSGTorus3D" type="CSGTorus3D" parent="."]
 visible = false
 
 [node name="CSGTorus3DDESCRIPTION" type="CSGTorus3D" parent="."]
-editor_description = "@CSGTorus3D@93:<CSGTorus3D#162168573120>"
+editor_description = "@CSGTorus3D@101:<CSGTorus3D#162302790856>"
 visible = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
 visible = false
+metadata/some_meta = 74
 
 [node name="Camera2DDESCRIPTION" type="Camera2D" parent="."]
-editor_description = "@Camera2D@95:<Camera2D#162218904771>"
+editor_description = "@Camera2D@103:<Camera2D#162353122507>"
 visible = false
+metadata/some_meta = 95
 
 [node name="Camera3D" type="Camera3D" parent="."]
 visible = false
 
 [node name="Camera3DDESCRIPTION" type="Camera3D" parent="."]
-editor_description = "@Camera3D@97:<Camera3D#162302790856>"
+editor_description = "@Camera3D@105:<Camera3D#162437008592>"
 visible = false
 
 [node name="CanvasGroup" type="CanvasGroup" parent="."]
 visible = false
 
 [node name="CanvasGroupDESCRIPTION" type="CanvasGroup" parent="."]
-editor_description = "@CanvasGroup@99:<CanvasGroup#162369899724>"
+editor_description = "@CanvasGroup@107:<CanvasGroup#162504117460>"
 visible = false
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 visible = false
+metadata/some_meta = 4
 
 [node name="CanvasLayerDESCRIPTION" type="CanvasLayer" parent="."]
-editor_description = "@CanvasLayer@101:<CanvasLayer#162420231375>"
+editor_description = "@CanvasLayer@109:<CanvasLayer#162554449111>"
 visible = false
+metadata/some_meta = 0
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 visible = false
 
 [node name="CanvasModulateDESCRIPTION" type="CanvasModulate" parent="."]
-editor_description = "@CanvasModulate@103:<CanvasModulate#162470563026>"
+editor_description = "@CanvasModulate@111:<CanvasModulate#162604780762>"
 visible = false
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 visible = false
 
 [node name="CenterContainerDESCRIPTION" type="CenterContainer" parent="."]
-editor_description = "@CenterContainer@105:<CenterContainer#162554449111>"
+editor_description = "@CenterContainer@113:<CenterContainer#162688666847>"
 visible = false
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 visible = false
+metadata/some_meta = 44
 
 [node name="CharacterBody2DDESCRIPTION" type="CharacterBody2D" parent="."]
-editor_description = "@CharacterBody2D@107:<CharacterBody2D#162621557979>"
+editor_description = "@CharacterBody2D@115:<CharacterBody2D#162755775715>"
 visible = false
+metadata/some_meta = 93
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 visible = false
 
 [node name="CharacterBody3DDESCRIPTION" type="CharacterBody3D" parent="."]
-editor_description = "@CharacterBody3D@109:<CharacterBody3D#162671889630>"
+editor_description = "@CharacterBody3D@117:<CharacterBody3D#162806107366>"
 visible = false
 
 [node name="CheckBox" type="CheckBox" parent="."]
 visible = false
 
 [node name="CheckBoxDESCRIPTION" type="CheckBox" parent="."]
-editor_description = "@CheckBox@111:<CheckBox#162789330149>"
+editor_description = "@CheckBox@119:<CheckBox#162923547885>"
 visible = false
 
 [node name="CheckButton" type="CheckButton" parent="."]
 visible = false
+metadata/some_meta = 12
 
 [node name="CheckButtonDESCRIPTION" type="CheckButton" parent="."]
-editor_description = "@CheckButton@113:<CheckButton#162940325102>"
+editor_description = "@CheckButton@121:<CheckButton#163074542838>"
 visible = false
+metadata/some_meta = 23
 
 [node name="CodeEdit" type="CodeEdit" parent="."]
 visible = false
 
 [node name="CodeEditDESCRIPTION" type="CodeEdit" parent="."]
-editor_description = "@CodeEdit@130:<CodeEdit#163393309959>"
+editor_description = "@CodeEdit@138:<CodeEdit#163527527695>"
 visible = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 visible = false
 
 [node name="CollisionPolygon2DDESCRIPTION" type="CollisionPolygon2D" parent="."]
-editor_description = "@CollisionPolygon2D@132:<CollisionPolygon2D#163628190996>"
+editor_description = "@CollisionPolygon2D@140:<CollisionPolygon2D#163762408732>"
 visible = false
 
 [node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="."]
 visible = false
+metadata/some_meta = 35
 
 [node name="CollisionPolygon3DDESCRIPTION" type="CollisionPolygon3D" parent="."]
-editor_description = "@CollisionPolygon3D@134:<CollisionPolygon3D#163678522647>"
+editor_description = "@CollisionPolygon3D@142:<CollisionPolygon3D#163812740383>"
 visible = false
+metadata/some_meta = 72
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 
 [node name="CollisionShape2DDESCRIPTION" type="CollisionShape2D" parent="."]
-editor_description = "@CollisionShape2D@136:<CollisionShape2D#163728854298>"
+editor_description = "@CollisionShape2D@144:<CollisionShape2D#163863072034>"
 visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 visible = false
 
 [node name="CollisionShape3DDESCRIPTION" type="CollisionShape3D" parent="."]
-editor_description = "@CollisionShape3D@138:<CollisionShape3D#163779185949>"
+editor_description = "@CollisionShape3D@146:<CollisionShape3D#163913403685>"
 visible = false
 
 [node name="ColorPicker" type="ColorPicker" parent="."]
 visible = false
+metadata/some_meta = 95
 
 [node name="ColorPickerDESCRIPTION" type="ColorPicker" parent="."]
-editor_description = "@ColorPicker@341:<ColorPicker#170305523322>"
+editor_description = "@ColorPicker@349:<ColorPicker#170439741058>"
 visible = false
+metadata/some_meta = 2
 
 [node name="ColorPickerButton" type="ColorPickerButton" parent="."]
 visible = false
 
 [node name="ColorPickerButtonDESCRIPTION" type="ColorPickerButton" parent="."]
-editor_description = "@ColorPickerButton@343:<ColorPickerButton#173660966702>"
+editor_description = "@ColorPickerButton@351:<ColorPickerButton#173795184438>"
 visible = false
 
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false
 
 [node name="ColorRectDESCRIPTION" type="ColorRect" parent="."]
-editor_description = "@ColorRect@345:<ColorRect#173778407221>"
+editor_description = "@ColorRect@353:<ColorRect#173912624957>"
 visible = false
 
 [node name="ConeTwistJoint3D" type="ConeTwistJoint3D" parent="."]
 visible = false
+metadata/some_meta = 62
 
 [node name="ConeTwistJoint3DDESCRIPTION" type="ConeTwistJoint3D" parent="."]
-editor_description = "@ConeTwistJoint3D@347:<ConeTwistJoint3D#173845516089>"
+editor_description = "@ConeTwistJoint3D@355:<ConeTwistJoint3D#173979733825>"
 visible = false
+metadata/some_meta = 52
 
 [node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]
 
 [node name="ConfirmationDialogDESCRIPTION" type="ConfirmationDialog" parent="."]
-editor_description = "@ConfirmationDialog@373:<ConfirmationDialog#174600490854>"
+editor_description = "@ConfirmationDialog@381:<ConfirmationDialog#174734708590>"
 
 [node name="Container" type="Container" parent="."]
 visible = false
 
 [node name="ContainerDESCRIPTION" type="Container" parent="."]
-editor_description = "@Container@375:<Container#175036698496>"
+editor_description = "@Container@383:<Container#175170916232>"
 visible = false
 
 [node name="Control" type="Control" parent="."]
 visible = false
 layout_mode = 3
 anchors_preset = 0
+metadata/some_meta = 55
 
 [node name="ControlDESCRIPTION" type="Control" parent="."]
-editor_description = "@Control@377:<Control#175137361798>"
+editor_description = "@Control@385:<Control#175271579534>"
 visible = false
 layout_mode = 3
 anchors_preset = 0
+metadata/some_meta = 16
 
 [node name="DampedSpringJoint2D" type="DampedSpringJoint2D" parent="."]
 visible = false
 
 [node name="DampedSpringJoint2DDESCRIPTION" type="DampedSpringJoint2D" parent="."]
-editor_description = "@DampedSpringJoint2D@379:<DampedSpringJoint2D#175204470666>"
+editor_description = "@DampedSpringJoint2D@387:<DampedSpringJoint2D#175338688402>"
 visible = false
 
 [node name="Decal" type="Decal" parent="."]
 visible = false
 
 [node name="DecalDESCRIPTION" type="Decal" parent="."]
-editor_description = "@Decal@381:<Decal#175254802317>"
+editor_description = "@Decal@389:<Decal#175389020053>"
 visible = false
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
 visible = false
+metadata/some_meta = 6
 
 [node name="DirectionalLight2DDESCRIPTION" type="DirectionalLight2D" parent="."]
-editor_description = "@DirectionalLight2D@383:<DirectionalLight2D#175305133968>"
+editor_description = "@DirectionalLight2D@391:<DirectionalLight2D#175439351704>"
 visible = false
+metadata/some_meta = 38
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 visible = false
 
 [node name="DirectionalLight3DDESCRIPTION" type="DirectionalLight3D" parent="."]
-editor_description = "@DirectionalLight3D@385:<DirectionalLight3D#175355465619>"
+editor_description = "@DirectionalLight3D@393:<DirectionalLight3D#175489683355>"
 visible = false
 
 [node name="FileDialog" type="FileDialog" parent="."]
 
 [node name="FileDialogDESCRIPTION" type="FileDialog" parent="."]
-editor_description = "@FileDialog@669:<FileDialog#183391752557>"
+editor_description = "@FileDialog@677:<FileDialog#183525970293>"
 
 [node name="FlowContainer" type="FlowContainer" parent="."]
 visible = false
+metadata/some_meta = 56
 
 [node name="FlowContainerDESCRIPTION" type="FlowContainer" parent="."]
-editor_description = "@FlowContainer@671:<FlowContainer#187468616284>"
+editor_description = "@FlowContainer@679:<FlowContainer#187602834020>"
 visible = false
+metadata/some_meta = 75
 
 [node name="FogVolume" type="FogVolume" parent="."]
 visible = false
 
 [node name="FogVolumeDESCRIPTION" type="FogVolume" parent="."]
-editor_description = "@FogVolume@673:<FogVolume#187535725152>"
+editor_description = "@FogVolume@681:<FogVolume#187669942888>"
 visible = false
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 visible = false
 
 [node name="GPUParticles2DDESCRIPTION" type="GPUParticles2D" parent="."]
-editor_description = "@GPUParticles2D@675:<GPUParticles2D#187586056803>"
+editor_description = "@GPUParticles2D@683:<GPUParticles2D#187720274539>"
 visible = false
 
 [node name="GPUParticles3D" type="GPUParticles3D" parent="."]
 visible = false
+metadata/some_meta = 50
 
 [node name="GPUParticles3DDESCRIPTION" type="GPUParticles3D" parent="."]
-editor_description = "@GPUParticles3D@677:<GPUParticles3D#187636388454>"
+editor_description = "@GPUParticles3D@685:<GPUParticles3D#187770606190>"
 visible = false
+metadata/some_meta = 84
 
 [node name="GPUParticlesAttractorBox3D" type="GPUParticlesAttractorBox3D" parent="."]
 visible = false
 
 [node name="GPUParticlesAttractorBox3DDESCRIPTION" type="GPUParticlesAttractorBox3D" parent="."]
-editor_description = "@GPUParticlesAttractorBox3D@679:<GPUParticlesAttractorBox3D#187686720105>"
+editor_description = "@GPUParticlesAttractorBox3D@687:<GPUParticlesAttractorBox3D#187820937841>"
 visible = false
 
 [node name="GPUParticlesAttractorSphere3D" type="GPUParticlesAttractorSphere3D" parent="."]
 visible = false
 
 [node name="GPUParticlesAttractorSphere3DDESCRIPTION" type="GPUParticlesAttractorSphere3D" parent="."]
-editor_description = "@GPUParticlesAttractorSphere3D@681:<GPUParticlesAttractorSphere3D#187737051756>"
+editor_description = "@GPUParticlesAttractorSphere3D@689:<GPUParticlesAttractorSphere3D#187871269492>"
 visible = false
 
 [node name="GPUParticlesAttractorVectorField3D" type="GPUParticlesAttractorVectorField3D" parent="."]
 visible = false
+metadata/some_meta = 14
 
 [node name="GPUParticlesAttractorVectorField3DDESCRIPTION" type="GPUParticlesAttractorVectorField3D" parent="."]
-editor_description = "@GPUParticlesAttractorVectorField3D@683:<GPUParticlesAttractorVectorField3D#187787383407>"
+editor_description = "@GPUParticlesAttractorVectorField3D@691:<GPUParticlesAttractorVectorField3D#187921601143>"
 visible = false
+metadata/some_meta = 46
 
 [node name="GPUParticlesCollisionBox3D" type="GPUParticlesCollisionBox3D" parent="."]
 visible = false
 
 [node name="GPUParticlesCollisionBox3DDESCRIPTION" type="GPUParticlesCollisionBox3D" parent="."]
-editor_description = "@GPUParticlesCollisionBox3D@685:<GPUParticlesCollisionBox3D#187837715058>"
+editor_description = "@GPUParticlesCollisionBox3D@693:<GPUParticlesCollisionBox3D#187971932794>"
 visible = false
 
 [node name="GPUParticlesCollisionHeightField3D" type="GPUParticlesCollisionHeightField3D" parent="."]
 visible = false
 
 [node name="GPUParticlesCollisionHeightField3DDESCRIPTION" type="GPUParticlesCollisionHeightField3D" parent="."]
-editor_description = "@GPUParticlesCollisionHeightField3D@687:<GPUParticlesCollisionHeightField3D#187888046709>"
+editor_description = "@GPUParticlesCollisionHeightField3D@695:<GPUParticlesCollisionHeightField3D#188022264445>"
 visible = false
 
 [node name="GPUParticlesCollisionSDF3D" type="GPUParticlesCollisionSDF3D" parent="."]
 visible = false
+metadata/some_meta = 97
 
 [node name="GPUParticlesCollisionSDF3DDESCRIPTION" type="GPUParticlesCollisionSDF3D" parent="."]
-editor_description = "@GPUParticlesCollisionSDF3D@689:<GPUParticlesCollisionSDF3D#187938378360>"
+editor_description = "@GPUParticlesCollisionSDF3D@697:<GPUParticlesCollisionSDF3D#188072596096>"
 visible = false
+metadata/some_meta = 32
 
 [node name="GPUParticlesCollisionSphere3D" type="GPUParticlesCollisionSphere3D" parent="."]
 visible = false
 
 [node name="GPUParticlesCollisionSphere3DDESCRIPTION" type="GPUParticlesCollisionSphere3D" parent="."]
-editor_description = "@GPUParticlesCollisionSphere3D@691:<GPUParticlesCollisionSphere3D#187988710011>"
+editor_description = "@GPUParticlesCollisionSphere3D@699:<GPUParticlesCollisionSphere3D#188122927747>"
 visible = false
 
 [node name="Generic6DOFJoint3D" type="Generic6DOFJoint3D" parent="."]
 visible = false
 
 [node name="Generic6DOFJoint3DDESCRIPTION" type="Generic6DOFJoint3D" parent="."]
-editor_description = "@Generic6DOFJoint3D@693:<Generic6DOFJoint3D#188039041662>"
+editor_description = "@Generic6DOFJoint3D@701:<Generic6DOFJoint3D#188173259398>"
 visible = false
 
 [node name="GeometryInstance3D" type="GeometryInstance3D" parent="."]
@@ -646,6 +716,7 @@ visibility_range_end = 0.0
 visibility_range_end_margin = 0.0
 visibility_range_fade_mode = 0
 script = null
+metadata/some_meta = 66
 
 [node name="GeometryInstance3DDESCRIPTION" type="GeometryInstance3D" parent="."]
 _import_path = NodePath("")
@@ -654,7 +725,7 @@ process_mode = 0
 process_priority = 0
 process_physics_priority = 0
 process_thread_group = 0
-editor_description = "@GeometryInstance3D@695:<GeometryInstance3D#188089373313>"
+editor_description = "@GeometryInstance3D@703:<GeometryInstance3D#188223591049>"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 rotation_edit_mode = 0
 rotation_order = 2
@@ -680,470 +751,517 @@ visibility_range_end = 0.0
 visibility_range_end_margin = 0.0
 visibility_range_fade_mode = 0
 script = null
+metadata/some_meta = 50
 
 [node name="GraphEdit" type="GraphEdit" parent="."]
 visible = false
 
 [node name="GraphEditDESCRIPTION" type="GraphEdit" parent="."]
-editor_description = "@GraphEdit@745:<GraphEdit#189716763362>"
+editor_description = "@GraphEdit@753:<GraphEdit#189850981098>"
 visible = false
 
 [node name="GraphElement" type="GraphElement" parent="."]
 visible = false
 
 [node name="GraphElementDESCRIPTION" type="GraphElement" parent="."]
-editor_description = "@GraphElement@747:<GraphElement#190589178646>"
+editor_description = "@GraphElement@755:<GraphElement#190723396382>"
 visible = false
 
 [node name="GraphNode" type="GraphNode" parent="."]
 visible = false
+metadata/some_meta = 29
 
 [node name="GraphNodeDESCRIPTION" type="GraphNode" parent="."]
-editor_description = "@GraphNode@755:<GraphNode#190824059684>"
+editor_description = "@GraphNode@763:<GraphNode#190958277420>"
 visible = false
+metadata/some_meta = 18
 
 [node name="GridContainer" type="GridContainer" parent="."]
 visible = false
 
 [node name="GridContainerDESCRIPTION" type="GridContainer" parent="."]
-editor_description = "@GridContainer@757:<GridContainer#190991831854>"
+editor_description = "@GridContainer@765:<GridContainer#191126049590>"
 visible = false
 
 [node name="GridMap" type="GridMap" parent="."]
 visible = false
 
 [node name="GridMapDESCRIPTION" type="GridMap" parent="."]
-editor_description = "@GridMap@759:<GridMap#191058940722>"
+editor_description = "@GridMap@767:<GridMap#191193158458>"
 visible = false
 
 [node name="GrooveJoint2D" type="GrooveJoint2D" parent="."]
 visible = false
+metadata/some_meta = 48
 
 [node name="GrooveJoint2DDESCRIPTION" type="GrooveJoint2D" parent="."]
-editor_description = "@GrooveJoint2D@761:<GrooveJoint2D#191109272373>"
+editor_description = "@GrooveJoint2D@769:<GrooveJoint2D#191243490109>"
 visible = false
+metadata/some_meta = 12
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 visible = false
 
 [node name="HBoxContainerDESCRIPTION" type="HBoxContainer" parent="."]
-editor_description = "@HBoxContainer@763:<HBoxContainer#191193158458>"
+editor_description = "@HBoxContainer@771:<HBoxContainer#191327376194>"
 visible = false
 
 [node name="HFlowContainer" type="HFlowContainer" parent="."]
 visible = false
 
 [node name="HFlowContainerDESCRIPTION" type="HFlowContainer" parent="."]
-editor_description = "@HFlowContainer@765:<HFlowContainer#191293821760>"
+editor_description = "@HFlowContainer@773:<HFlowContainer#191428039496>"
 visible = false
 
 [node name="HScrollBar" type="HScrollBar" parent="."]
 visible = false
+metadata/some_meta = 19
 
 [node name="HScrollBarDESCRIPTION" type="HScrollBar" parent="."]
-editor_description = "@HScrollBar@767:<HScrollBar#191394485062>"
+editor_description = "@HScrollBar@775:<HScrollBar#191528702798>"
 visible = false
+metadata/some_meta = 75
 
 [node name="HSeparator" type="HSeparator" parent="."]
 visible = false
 
 [node name="HSeparatorDESCRIPTION" type="HSeparator" parent="."]
-editor_description = "@HSeparator@769:<HSeparator#191495148364>"
+editor_description = "@HSeparator@777:<HSeparator#191629366100>"
 visible = false
 
 [node name="HSlider" type="HSlider" parent="."]
 visible = false
 
 [node name="HSliderDESCRIPTION" type="HSlider" parent="."]
-editor_description = "@HSlider@771:<HSlider#191595811666>"
+editor_description = "@HSlider@779:<HSlider#191730029402>"
 visible = false
 
 [node name="HSplitContainer" type="HSplitContainer" parent="."]
 visible = false
+metadata/some_meta = 66
 
 [node name="HSplitContainerDESCRIPTION" type="HSplitContainer" parent="."]
-editor_description = "@HSplitContainer@776:<HSplitContainer#191763583836>"
+editor_description = "@HSplitContainer@784:<HSplitContainer#191897801572>"
 visible = false
+metadata/some_meta = 8
 
 [node name="HTTPRequest" type="HTTPRequest" parent="."]
 
 [node name="HTTPRequestDESCRIPTION" type="HTTPRequest" parent="."]
-editor_description = "@HTTPRequest@781:<HTTPRequest#192065573742>"
+editor_description = "@HTTPRequest@789:<HTTPRequest#192199791478>"
 
 [node name="HingeJoint3D" type="HingeJoint3D" parent="."]
 visible = false
 
 [node name="HingeJoint3DDESCRIPTION" type="HingeJoint3D" parent="."]
-editor_description = "@HingeJoint3D@783:<HingeJoint3D#192216568695>"
+editor_description = "@HingeJoint3D@791:<HingeJoint3D#192350786431>"
 visible = false
 
 [node name="ImporterMeshInstance3D" type="ImporterMeshInstance3D" parent="."]
 visible = false
+metadata/some_meta = 55
 
 [node name="ImporterMeshInstance3DDESCRIPTION" type="ImporterMeshInstance3D" parent="."]
-editor_description = "@ImporterMeshInstance3D@785:<ImporterMeshInstance3D#192266900346>"
+editor_description = "@ImporterMeshInstance3D@793:<ImporterMeshInstance3D#192401118082>"
 visible = false
+metadata/some_meta = 9
 
 [node name="ItemList" type="ItemList" parent="."]
 visible = false
 
 [node name="ItemListDESCRIPTION" type="ItemList" parent="."]
-editor_description = "@ItemList@790:<ItemList#192417895299>"
+editor_description = "@ItemList@798:<ItemList#192552113035>"
 visible = false
 
 [node name="Label" type="Label" parent="."]
 visible = false
 
 [node name="LabelDESCRIPTION" type="Label" parent="."]
-editor_description = "@Label@792:<Label#192552113035>"
+editor_description = "@Label@800:<Label#192686330771>"
 visible = false
 
 [node name="Label3D" type="Label3D" parent="."]
 visible = false
+metadata/some_meta = 58
 
 [node name="Label3DDESCRIPTION" type="Label3D" parent="."]
-editor_description = "@Label3D@794:<Label3D#192619221903>"
+editor_description = "@Label3D@802:<Label3D#192753439639>"
 visible = false
+metadata/some_meta = 87
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
 visible = false
 
 [node name="LightOccluder2DDESCRIPTION" type="LightOccluder2D" parent="."]
-editor_description = "@LightOccluder2D@796:<LightOccluder2D#192669553554>"
+editor_description = "@LightOccluder2D@804:<LightOccluder2D#192803771290>"
 visible = false
 
 [node name="LightmapGI" type="LightmapGI" parent="."]
 visible = false
 
 [node name="LightmapGIDESCRIPTION" type="LightmapGI" parent="."]
-editor_description = "@LightmapGI@798:<LightmapGI#192719885205>"
+editor_description = "@LightmapGI@806:<LightmapGI#192854102941>"
 visible = false
 
 [node name="LightmapProbe" type="LightmapProbe" parent="."]
 visible = false
+metadata/some_meta = 53
 
 [node name="LightmapProbeDESCRIPTION" type="LightmapProbe" parent="."]
-editor_description = "@LightmapProbe@800:<LightmapProbe#192770216856>"
+editor_description = "@LightmapProbe@808:<LightmapProbe#192904434592>"
 visible = false
+metadata/some_meta = 49
 
 [node name="Line2D" type="Line2D" parent="."]
 visible = false
 
 [node name="Line2DDESCRIPTION" type="Line2D" parent="."]
-editor_description = "@Line2D@802:<Line2D#192820548507>"
+editor_description = "@Line2D@810:<Line2D#192954766243>"
 visible = false
 
 [node name="LineEdit" type="LineEdit" parent="."]
 visible = false
 
 [node name="LineEditDESCRIPTION" type="LineEdit" parent="."]
-editor_description = "@LineEdit@804:<LineEdit#192904434592>"
+editor_description = "@LineEdit@812:<LineEdit#193038652328>"
 visible = false
 
 [node name="LinkButton" type="LinkButton" parent="."]
 visible = false
+metadata/some_meta = 43
 
 [node name="LinkButtonDESCRIPTION" type="LinkButton" parent="."]
-editor_description = "@LinkButton@806:<LinkButton#193038652328>"
+editor_description = "@LinkButton@814:<LinkButton#193172870064>"
 visible = false
+metadata/some_meta = 34
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 visible = false
 
 [node name="MarginContainerDESCRIPTION" type="MarginContainer" parent="."]
-editor_description = "@MarginContainer@808:<MarginContainer#193156092847>"
+editor_description = "@MarginContainer@816:<MarginContainer#193290310583>"
 visible = false
 
 [node name="Marker2D" type="Marker2D" parent="."]
 visible = false
 
 [node name="Marker2DDESCRIPTION" type="Marker2D" parent="."]
-editor_description = "@Marker2D@810:<Marker2D#193223201715>"
+editor_description = "@Marker2D@818:<Marker2D#193357419451>"
 visible = false
 
 [node name="Marker3D" type="Marker3D" parent="."]
 visible = false
+metadata/some_meta = 51
 
 [node name="Marker3DDESCRIPTION" type="Marker3D" parent="."]
-editor_description = "@Marker3D@812:<Marker3D#193273533366>"
+editor_description = "@Marker3D@820:<Marker3D#193407751102>"
 visible = false
+metadata/some_meta = 84
 
 [node name="MenuBar" type="MenuBar" parent="."]
 visible = false
 
 [node name="MenuBarDESCRIPTION" type="MenuBar" parent="."]
-editor_description = "@MenuBar@814:<MenuBar#193357419451>"
+editor_description = "@MenuBar@822:<MenuBar#193491637187>"
 visible = false
 
 [node name="MenuButton" type="MenuButton" parent="."]
 visible = false
 
 [node name="MenuButtonDESCRIPTION" type="MenuButton" parent="."]
-editor_description = "@MenuButton@834:<MenuButton#194028508131>"
+editor_description = "@MenuButton@842:<MenuButton#194162725867>"
 visible = false
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
 visible = false
+metadata/some_meta = 53
 
 [node name="MeshInstance2DDESCRIPTION" type="MeshInstance2D" parent="."]
-editor_description = "@MeshInstance2D@836:<MeshInstance2D#194380829688>"
+editor_description = "@MeshInstance2D@844:<MeshInstance2D#194515047424>"
 visible = false
+metadata/some_meta = 30
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 visible = false
 
 [node name="MeshInstance3DDESCRIPTION" type="MeshInstance3D" parent="."]
-editor_description = "@MeshInstance3D@838:<MeshInstance3D#194431161339>"
+editor_description = "@MeshInstance3D@846:<MeshInstance3D#194565379075>"
 visible = false
 
 [node name="MultiMeshInstance2D" type="MultiMeshInstance2D" parent="."]
 visible = false
+metadata/some_meta = 95
 
 [node name="MultiMeshInstance2DDESCRIPTION" type="MultiMeshInstance2D" parent="."]
-editor_description = "@MultiMeshInstance2D@842:<MultiMeshInstance2D#194531824641>"
+editor_description = "@MultiMeshInstance2D@850:<MultiMeshInstance2D#194666042377>"
 visible = false
+metadata/some_meta = 94
 
 [node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="."]
 visible = false
 
 [node name="MultiMeshInstance3DDESCRIPTION" type="MultiMeshInstance3D" parent="."]
-editor_description = "@MultiMeshInstance3D@844:<MultiMeshInstance3D#194582156292>"
+editor_description = "@MultiMeshInstance3D@852:<MultiMeshInstance3D#194716374028>"
 visible = false
 
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
 
 [node name="MultiplayerSpawnerDESCRIPTION" type="MultiplayerSpawner" parent="."]
-editor_description = "@MultiplayerSpawner@846:<MultiplayerSpawner#194632487943>"
+editor_description = "@MultiplayerSpawner@854:<MultiplayerSpawner#194766705679>"
 
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+metadata/some_meta = 69
 
 [node name="MultiplayerSynchronizerDESCRIPTION" type="MultiplayerSynchronizer" parent="."]
-editor_description = "@MultiplayerSynchronizer@848:<MultiplayerSynchronizer#194682819594>"
+editor_description = "@MultiplayerSynchronizer@856:<MultiplayerSynchronizer#194817037330>"
+metadata/some_meta = 9
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
 
 [node name="NavigationAgent2DDESCRIPTION" type="NavigationAgent2D" parent="."]
-editor_description = "@NavigationAgent2D@850:<NavigationAgent2D#194800260113>"
+editor_description = "@NavigationAgent2D@858:<NavigationAgent2D#194934477849>"
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
 [node name="NavigationAgent3DDESCRIPTION" type="NavigationAgent3D" parent="."]
-editor_description = "@NavigationAgent3D@852:<NavigationAgent3D#194951255066>"
+editor_description = "@NavigationAgent3D@860:<NavigationAgent3D#195085472802>"
 
 [node name="NavigationLink2D" type="NavigationLink2D" parent="."]
 visible = false
+metadata/some_meta = 77
 
 [node name="NavigationLink2DDESCRIPTION" type="NavigationLink2D" parent="."]
-editor_description = "@NavigationLink2D@854:<NavigationLink2D#195035141151>"
+editor_description = "@NavigationLink2D@862:<NavigationLink2D#195169358887>"
 visible = false
+metadata/some_meta = 66
 
 [node name="NavigationLink3D" type="NavigationLink3D" parent="."]
 visible = false
 
 [node name="NavigationLink3DDESCRIPTION" type="NavigationLink3D" parent="."]
-editor_description = "@NavigationLink3D@856:<NavigationLink3D#195085472802>"
+editor_description = "@NavigationLink3D@864:<NavigationLink3D#195219690538>"
 visible = false
 
 [node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="."]
 visible = false
 
 [node name="NavigationObstacle2DDESCRIPTION" type="NavigationObstacle2D" parent="."]
-editor_description = "@NavigationObstacle2D@858:<NavigationObstacle2D#195135804453>"
+editor_description = "@NavigationObstacle2D@866:<NavigationObstacle2D#195270022189>"
 visible = false
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="."]
 visible = false
+metadata/some_meta = 33
 
 [node name="NavigationObstacle3DDESCRIPTION" type="NavigationObstacle3D" parent="."]
-editor_description = "@NavigationObstacle3D@860:<NavigationObstacle3D#195186136104>"
+editor_description = "@NavigationObstacle3D@868:<NavigationObstacle3D#195320353840>"
 visible = false
+metadata/some_meta = 13
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 visible = false
 
 [node name="NavigationRegion2DDESCRIPTION" type="NavigationRegion2D" parent="."]
-editor_description = "@NavigationRegion2D@862:<NavigationRegion2D#195236467755>"
+editor_description = "@NavigationRegion2D@870:<NavigationRegion2D#195370685491>"
 visible = false
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 visible = false
 
 [node name="NavigationRegion3DDESCRIPTION" type="NavigationRegion3D" parent="."]
-editor_description = "@NavigationRegion3D@864:<NavigationRegion3D#195286799406>"
+editor_description = "@NavigationRegion3D@872:<NavigationRegion3D#195421017142>"
 visible = false
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 visible = false
+metadata/some_meta = 20
 
 [node name="NinePatchRectDESCRIPTION" type="NinePatchRect" parent="."]
-editor_description = "@NinePatchRect@866:<NinePatchRect#195370685491>"
+editor_description = "@NinePatchRect@874:<NinePatchRect#195504903227>"
 visible = false
+metadata/some_meta = 99
 
-[node name="Node" type="Node" parent="."]
+[node name="Node9" type="Node" parent="."]
 
 [node name="NodeDESCRIPTION" type="Node" parent="."]
-editor_description = "@Node@868:<Node#195437794359>"
+editor_description = "@Node@876:<Node#195572012095>"
 
 [node name="Node2D" type="Node2D" parent="."]
 visible = false
 
 [node name="Node2DDESCRIPTION" type="Node2D" parent="."]
-editor_description = "@Node2D@870:<Node2D#195488126010>"
+editor_description = "@Node2D@878:<Node2D#195622343746>"
 visible = false
 
 [node name="Node3D" type="Node3D" parent="."]
 visible = false
+metadata/some_meta = 82
 
 [node name="Node3DDESCRIPTION" type="Node3D" parent="."]
-editor_description = "@Node3D@872:<Node3D#195538457661>"
+editor_description = "@Node3D@880:<Node3D#195672675397>"
 visible = false
+metadata/some_meta = 33
 
 [node name="OccluderInstance3D" type="OccluderInstance3D" parent="."]
 visible = false
 
 [node name="OccluderInstance3DDESCRIPTION" type="OccluderInstance3D" parent="."]
-editor_description = "@OccluderInstance3D@874:<OccluderInstance3D#195588789312>"
+editor_description = "@OccluderInstance3D@882:<OccluderInstance3D#195723007048>"
 visible = false
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 visible = false
 
 [node name="OmniLight3DDESCRIPTION" type="OmniLight3D" parent="."]
-editor_description = "@OmniLight3D@876:<OmniLight3D#195639120963>"
+editor_description = "@OmniLight3D@884:<OmniLight3D#195773338699>"
 visible = false
 
 [node name="OpenXRHand" type="OpenXRHand" parent="."]
 visible = false
+metadata/some_meta = 4
 
 [node name="OpenXRHandDESCRIPTION" type="OpenXRHand" parent="."]
-editor_description = "@OpenXRHand@878:<OpenXRHand#195689452614>"
+editor_description = "@OpenXRHand@886:<OpenXRHand#195823670350>"
 visible = false
+metadata/some_meta = 52
 
 [node name="OptionButton" type="OptionButton" parent="."]
 visible = false
 
 [node name="OptionButtonDESCRIPTION" type="OptionButton" parent="."]
-editor_description = "@OptionButton@898:<OptionButton#196343764077>"
+editor_description = "@OptionButton@906:<OptionButton#196477981813>"
 visible = false
 
 [node name="Panel" type="Panel" parent="."]
 visible = false
 
 [node name="PanelDESCRIPTION" type="Panel" parent="."]
-editor_description = "@Panel@900:<Panel#196729640068>"
+editor_description = "@Panel@908:<Panel#196863857804>"
 visible = false
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 visible = false
+metadata/some_meta = 60
 
 [node name="PanelContainerDESCRIPTION" type="PanelContainer" parent="."]
-editor_description = "@PanelContainer@902:<PanelContainer#196830303370>"
+editor_description = "@PanelContainer@910:<PanelContainer#196964521106>"
 visible = false
+metadata/some_meta = 14
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 visible = false
 
 [node name="ParallaxBackgroundDESCRIPTION" type="ParallaxBackground" parent="."]
-editor_description = "@ParallaxBackground@904:<ParallaxBackground#196897412238>"
+editor_description = "@ParallaxBackground@912:<ParallaxBackground#197031629974>"
 visible = false
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 visible = false
 
 [node name="ParallaxLayerDESCRIPTION" type="ParallaxLayer" parent="."]
-editor_description = "@ParallaxLayer@906:<ParallaxLayer#196947743889>"
+editor_description = "@ParallaxLayer@914:<ParallaxLayer#197081961625>"
 visible = false
 
 [node name="Path2D" type="Path2D" parent="."]
 visible = false
+metadata/some_meta = 62
 
 [node name="Path2DDESCRIPTION" type="Path2D" parent="."]
-editor_description = "@Path2D@908:<Path2D#196998075540>"
+editor_description = "@Path2D@916:<Path2D#197132293276>"
 visible = false
+metadata/some_meta = 91
 
 [node name="Path3D" type="Path3D" parent="."]
 visible = false
 
 [node name="Path3DDESCRIPTION" type="Path3D" parent="."]
-editor_description = "@Path3D@910:<Path3D#197048407191>"
+editor_description = "@Path3D@918:<Path3D#197182624927>"
 visible = false
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
 visible = false
 
 [node name="PathFollow2DDESCRIPTION" type="PathFollow2D" parent="."]
-editor_description = "@PathFollow2D@912:<PathFollow2D#197098738842>"
+editor_description = "@PathFollow2D@920:<PathFollow2D#197232956578>"
 visible = false
 
 [node name="PathFollow3D" type="PathFollow3D" parent="."]
 visible = false
+metadata/some_meta = 47
 
 [node name="PathFollow3DDESCRIPTION" type="PathFollow3D" parent="."]
-editor_description = "@PathFollow3D@914:<PathFollow3D#197149070493>"
+editor_description = "@PathFollow3D@922:<PathFollow3D#197283288229>"
 visible = false
+metadata/some_meta = 20
 
 [node name="PhysicalBone2D" type="PhysicalBone2D" parent="."]
 visible = false
 
 [node name="PhysicalBone2DDESCRIPTION" type="PhysicalBone2D" parent="."]
-editor_description = "@PhysicalBone2D@916:<PhysicalBone2D#197199402144>"
+editor_description = "@PhysicalBone2D@924:<PhysicalBone2D#197333619880>"
 visible = false
 
 [node name="PhysicalBone3D" type="PhysicalBone3D" parent="."]
 visible = false
 
 [node name="PhysicalBone3DDESCRIPTION" type="PhysicalBone3D" parent="."]
-editor_description = "@PhysicalBone3D@918:<PhysicalBone3D#197249733795>"
+editor_description = "@PhysicalBone3D@926:<PhysicalBone3D#197383951531>"
 visible = false
 
 [node name="PinJoint2D" type="PinJoint2D" parent="."]
 visible = false
+metadata/some_meta = 29
 
 [node name="PinJoint2DDESCRIPTION" type="PinJoint2D" parent="."]
-editor_description = "@PinJoint2D@920:<PinJoint2D#197300065446>"
+editor_description = "@PinJoint2D@928:<PinJoint2D#197434283182>"
 visible = false
+metadata/some_meta = 16
 
 [node name="PinJoint3D" type="PinJoint3D" parent="."]
 visible = false
 
 [node name="PinJoint3DDESCRIPTION" type="PinJoint3D" parent="."]
-editor_description = "@PinJoint3D@922:<PinJoint3D#197350397097>"
+editor_description = "@PinJoint3D@930:<PinJoint3D#197484614833>"
 visible = false
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 visible = false
 
 [node name="PointLight2DDESCRIPTION" type="PointLight2D" parent="."]
-editor_description = "@PointLight2D@924:<PointLight2D#197400728748>"
+editor_description = "@PointLight2D@932:<PointLight2D#197534946484>"
 visible = false
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
 visible = false
+metadata/some_meta = 63
 
 [node name="Polygon2DDESCRIPTION" type="Polygon2D" parent="."]
-editor_description = "@Polygon2D@926:<Polygon2D#197451060399>"
+editor_description = "@Polygon2D@934:<Polygon2D#197585278135>"
 visible = false
+metadata/some_meta = 84
 
 [node name="Popup" type="Popup" parent="."]
 
 [node name="PopupDESCRIPTION" type="Popup" parent="."]
-editor_description = "@Popup@928:<Popup#197602055352>"
+editor_description = "@Popup@936:<Popup#197736273088>"
 
 [node name="PopupMenu" type="PopupMenu" parent="."]
 
 [node name="PopupMenuDESCRIPTION" type="PopupMenu" parent="."]
-editor_description = "@PopupMenu@945:<PopupMenu#198206035164>"
+editor_description = "@PopupMenu@953:<PopupMenu#198340252900>"
 
 [node name="PopupPanel" type="PopupPanel" parent="."]
+metadata/some_meta = 28
 
 [node name="PopupPanelDESCRIPTION" type="PopupPanel" parent="."]
-editor_description = "@PopupPanel@950:<PopupPanel#198675797240>"
+editor_description = "@PopupPanel@958:<PopupPanel#198810014976>"
+metadata/some_meta = 79
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 visible = false
 
 [node name="ProgressBarDESCRIPTION" type="ProgressBar" parent="."]
-editor_description = "@ProgressBar@952:<ProgressBar#198843569410>"
+editor_description = "@ProgressBar@960:<ProgressBar#198977787146>"
 visible = false
 
 [node name="Range" type="Range" parent="."]
@@ -1223,7 +1341,7 @@ process_mode = 0
 process_priority = 0
 process_physics_priority = 0
 process_thread_group = 0
-editor_description = "@Range@954:<Range#198944232712>"
+editor_description = "@Range@962:<Range#199078450448>"
 visible = false
 modulate = Color(1, 1, 1, 1)
 self_modulate = Color(1, 1, 1, 1)
@@ -1288,117 +1406,129 @@ script = null
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 visible = false
+metadata/some_meta = 15
 
 [node name="RayCast2DDESCRIPTION" type="RayCast2D" parent="."]
-editor_description = "@RayCast2D@956:<RayCast2D#199011341580>"
+editor_description = "@RayCast2D@964:<RayCast2D#199145559316>"
 visible = false
+metadata/some_meta = 38
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
 visible = false
 
 [node name="RayCast3DDESCRIPTION" type="RayCast3D" parent="."]
-editor_description = "@RayCast3D@958:<RayCast3D#199061673231>"
+editor_description = "@RayCast3D@966:<RayCast3D#199195890967>"
 visible = false
 
 [node name="ReferenceRect" type="ReferenceRect" parent="."]
 visible = false
 
 [node name="ReferenceRectDESCRIPTION" type="ReferenceRect" parent="."]
-editor_description = "@ReferenceRect@960:<ReferenceRect#199145559316>"
+editor_description = "@ReferenceRect@968:<ReferenceRect#199279777052>"
 visible = false
 
 [node name="ReflectionProbe" type="ReflectionProbe" parent="."]
 visible = false
+metadata/some_meta = 51
 
 [node name="ReflectionProbeDESCRIPTION" type="ReflectionProbe" parent="."]
-editor_description = "@ReflectionProbe@962:<ReflectionProbe#199212668184>"
+editor_description = "@ReflectionProbe@970:<ReflectionProbe#199346885920>"
 visible = false
+metadata/some_meta = 79
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
 visible = false
 
 [node name="RemoteTransform2DDESCRIPTION" type="RemoteTransform2D" parent="."]
-editor_description = "@RemoteTransform2D@964:<RemoteTransform2D#199262999835>"
+editor_description = "@RemoteTransform2D@972:<RemoteTransform2D#199397217571>"
 visible = false
 
 [node name="RemoteTransform3D" type="RemoteTransform3D" parent="."]
 visible = false
 
 [node name="RemoteTransform3DDESCRIPTION" type="RemoteTransform3D" parent="."]
-editor_description = "@RemoteTransform3D@966:<RemoteTransform3D#199313331486>"
+editor_description = "@RemoteTransform3D@974:<RemoteTransform3D#199447549222>"
 visible = false
 
 [node name="ResourcePreloader" type="ResourcePreloader" parent="."]
+metadata/some_meta = 85
 
 [node name="ResourcePreloaderDESCRIPTION" type="ResourcePreloader" parent="."]
-editor_description = "@ResourcePreloader@968:<ResourcePreloader#199363663137>"
+editor_description = "@ResourcePreloader@976:<ResourcePreloader#199497880873>"
+metadata/some_meta = 55
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 visible = false
 
 [node name="RichTextLabelDESCRIPTION" type="RichTextLabel" parent="."]
-editor_description = "@RichTextLabel@973:<RichTextLabel#199548212524>"
+editor_description = "@RichTextLabel@981:<RichTextLabel#199682430260>"
 visible = false
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 visible = false
 
 [node name="RigidBody2DDESCRIPTION" type="RigidBody2D" parent="."]
-editor_description = "@RigidBody2D@975:<RigidBody2D#199665653043>"
+editor_description = "@RigidBody2D@983:<RigidBody2D#199799870779>"
 visible = false
 
 [node name="RigidBody3D" type="RigidBody3D" parent="."]
 visible = false
+metadata/some_meta = 76
 
 [node name="RigidBody3DDESCRIPTION" type="RigidBody3D" parent="."]
-editor_description = "@RigidBody3D@977:<RigidBody3D#199715984694>"
+editor_description = "@RigidBody3D@985:<RigidBody3D#199850202430>"
 visible = false
+metadata/some_meta = 94
 
 [node name="RootMotionView" type="RootMotionView" parent="."]
 visible = false
 
 [node name="RootMotionViewDESCRIPTION" type="RootMotionView" parent="."]
-editor_description = "@RootMotionView@979:<RootMotionView#199799870779>"
+editor_description = "@RootMotionView@987:<RootMotionView#199934088515>"
 visible = false
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 visible = false
 
 [node name="ScrollContainerDESCRIPTION" type="ScrollContainer" parent="."]
-editor_description = "@ScrollContainer@981:<ScrollContainer#200034751817>"
+editor_description = "@ScrollContainer@989:<ScrollContainer#200168969553>"
 visible = false
 
 [node name="ShaderGlobalsOverride" type="ShaderGlobalsOverride" parent="."]
+metadata/some_meta = 93
 
 [node name="ShaderGlobalsOverrideDESCRIPTION" type="ShaderGlobalsOverride" parent="."]
-editor_description = "@ShaderGlobalsOverride@983:<ShaderGlobalsOverride#200168969553>"
+editor_description = "@ShaderGlobalsOverride@991:<ShaderGlobalsOverride#200303187289>"
+metadata/some_meta = 45
 
 [node name="ShapeCast2D" type="ShapeCast2D" parent="."]
 visible = false
 
 [node name="ShapeCast2DDESCRIPTION" type="ShapeCast2D" parent="."]
-editor_description = "@ShapeCast2D@985:<ShapeCast2D#200219301204>"
+editor_description = "@ShapeCast2D@993:<ShapeCast2D#200353518940>"
 visible = false
 
 [node name="ShapeCast3D" type="ShapeCast3D" parent="."]
 visible = false
 
 [node name="ShapeCast3DDESCRIPTION" type="ShapeCast3D" parent="."]
-editor_description = "@ShapeCast3D@987:<ShapeCast3D#200269632855>"
+editor_description = "@ShapeCast3D@995:<ShapeCast3D#200403850591>"
 visible = false
 
 [node name="Skeleton2D" type="Skeleton2D" parent="."]
 visible = false
+metadata/some_meta = 32
 
 [node name="Skeleton2DDESCRIPTION" type="Skeleton2D" parent="."]
-editor_description = "@Skeleton2D@989:<Skeleton2D#200319964506>"
+editor_description = "@Skeleton2D@997:<Skeleton2D#200454182242>"
 visible = false
+metadata/some_meta = 64
 
 [node name="Skeleton3D" type="Skeleton3D" parent="."]
 visible = false
 
 [node name="Skeleton3DDESCRIPTION" type="Skeleton3D" parent="."]
-editor_description = "@Skeleton3D@991:<Skeleton3D#200370296157>"
+editor_description = "@Skeleton3D@999:<Skeleton3D#200504513893>"
 visible = false
 
 [node name="SkeletonIK3D" type="SkeletonIK3D" parent="."]
@@ -1406,249 +1536,273 @@ process_priority = 1
 
 [node name="SkeletonIK3DDESCRIPTION" type="SkeletonIK3D" parent="."]
 process_priority = 1
-editor_description = "@SkeletonIK3D@993:<SkeletonIK3D#200420627808>"
+editor_description = "@SkeletonIK3D@1001:<SkeletonIK3D#200554845544>"
 
 [node name="SliderJoint3D" type="SliderJoint3D" parent="."]
 visible = false
+metadata/some_meta = 48
 
 [node name="SliderJoint3DDESCRIPTION" type="SliderJoint3D" parent="."]
-editor_description = "@SliderJoint3D@995:<SliderJoint3D#200470959459>"
+editor_description = "@SliderJoint3D@1003:<SliderJoint3D#200605177195>"
 visible = false
+metadata/some_meta = 68
 
 [node name="SoftBody3D" type="SoftBody3D" parent="."]
 visible = false
 
 [node name="SoftBody3DDESCRIPTION" type="SoftBody3D" parent="."]
-editor_description = "@SoftBody3D@997:<SoftBody3D#200554845544>"
+editor_description = "@SoftBody3D@1005:<SoftBody3D#200689063280>"
 visible = false
 
 [node name="SpinBox" type="SpinBox" parent="."]
 visible = false
 
 [node name="SpinBoxDESCRIPTION" type="SpinBox" parent="."]
-editor_description = "@SpinBox@1005:<SpinBox#200756172148>"
+editor_description = "@SpinBox@1013:<SpinBox#200890389884>"
 visible = false
 
 [node name="SplitContainer" type="SplitContainer" parent="."]
 visible = false
+metadata/some_meta = 83
 
 [node name="SplitContainerDESCRIPTION" type="SplitContainer" parent="."]
-editor_description = "@SplitContainer@1010:<SplitContainer#200974275969>"
+editor_description = "@SplitContainer@1018:<SplitContainer#201108493705>"
 visible = false
+metadata/some_meta = 23
 
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
 visible = false
 
 [node name="SpotLight3DDESCRIPTION" type="SpotLight3D" parent="."]
-editor_description = "@SpotLight3D@1012:<SpotLight3D#201074939271>"
+editor_description = "@SpotLight3D@1020:<SpotLight3D#201209157007>"
 visible = false
 
 [node name="SpringArm3D" type="SpringArm3D" parent="."]
 visible = false
 
 [node name="SpringArm3DDESCRIPTION" type="SpringArm3D" parent="."]
-editor_description = "@SpringArm3D@1014:<SpringArm3D#201125270922>"
+editor_description = "@SpringArm3D@1022:<SpringArm3D#201259488658>"
 visible = false
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
+metadata/some_meta = 3
 
 [node name="Sprite2DDESCRIPTION" type="Sprite2D" parent="."]
-editor_description = "@Sprite2D@1016:<Sprite2D#201175602573>"
+editor_description = "@Sprite2D@1024:<Sprite2D#201309820309>"
 visible = false
+metadata/some_meta = 49
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 visible = false
 
 [node name="Sprite3DDESCRIPTION" type="Sprite3D" parent="."]
-editor_description = "@Sprite3D@1018:<Sprite3D#201225934224>"
+editor_description = "@Sprite3D@1026:<Sprite3D#201360151960>"
 visible = false
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 visible = false
 
 [node name="StaticBody2DDESCRIPTION" type="StaticBody2D" parent="."]
-editor_description = "@StaticBody2D@1020:<StaticBody2D#201276265875>"
+editor_description = "@StaticBody2D@1028:<StaticBody2D#201410483611>"
 visible = false
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 visible = false
+metadata/some_meta = 12
 
 [node name="StaticBody3DDESCRIPTION" type="StaticBody3D" parent="."]
-editor_description = "@StaticBody3D@1022:<StaticBody3D#201326597526>"
+editor_description = "@StaticBody3D@1030:<StaticBody3D#201460815262>"
 visible = false
+metadata/some_meta = 30
 
 [node name="SubViewport" type="SubViewport" parent="."]
 
 [node name="SubViewportDESCRIPTION" type="SubViewport" parent="."]
-editor_description = "@SubViewport@1024:<SubViewport#201444038045>"
+editor_description = "@SubViewport@1032:<SubViewport#201578255781>"
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
 visible = false
 
 [node name="SubViewportContainerDESCRIPTION" type="SubViewportContainer" parent="."]
-editor_description = "@SubViewportContainer@1026:<SubViewportContainer#201561478564>"
+editor_description = "@SubViewportContainer@1034:<SubViewportContainer#201695696300>"
 visible = false
 
 [node name="TabBar" type="TabBar" parent="."]
 visible = false
+metadata/some_meta = 18
 
 [node name="TabBarDESCRIPTION" type="TabBar" parent="."]
-editor_description = "@TabBar@1028:<TabBar#201662141866>"
+editor_description = "@TabBar@1036:<TabBar#201796359602>"
 visible = false
+metadata/some_meta = 35
 
 [node name="TabContainer" type="TabContainer" parent="."]
 visible = false
 
 [node name="TabContainerDESCRIPTION" type="TabContainer" parent="."]
-editor_description = "@TabContainer@1033:<TabContainer#201829914036>"
+editor_description = "@TabContainer@1041:<TabContainer#201964131772>"
 visible = false
 
 [node name="TextEdit" type="TextEdit" parent="."]
 visible = false
 
 [node name="TextEditDESCRIPTION" type="TextEdit" parent="."]
-editor_description = "@TextEdit@1050:<TextEdit#202299676110>"
+editor_description = "@TextEdit@1058:<TextEdit#202433893846>"
 visible = false
 
 [node name="TextureButton" type="TextureButton" parent="."]
 visible = false
+metadata/some_meta = 66
 
 [node name="TextureButtonDESCRIPTION" type="TextureButton" parent="."]
-editor_description = "@TextureButton@1052:<TextureButton#202568111581>"
+editor_description = "@TextureButton@1060:<TextureButton#202702329317>"
 visible = false
+metadata/some_meta = 58
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="."]
 visible = false
 
 [node name="TextureProgressBarDESCRIPTION" type="TextureProgressBar" parent="."]
-editor_description = "@TextureProgressBar@1054:<TextureProgressBar#202668774883>"
+editor_description = "@TextureProgressBar@1062:<TextureProgressBar#202802992619>"
 visible = false
 
 [node name="TextureRect" type="TextureRect" parent="."]
 visible = false
 
 [node name="TextureRectDESCRIPTION" type="TextureRect" parent="."]
-editor_description = "@TextureRect@1056:<TextureRect#202769438185>"
+editor_description = "@TextureRect@1064:<TextureRect#202903655921>"
 visible = false
 
 [node name="TileMap" type="TileMap" parent="."]
 visible = false
 format = 2
+metadata/some_meta = 73
 
 [node name="TileMapDESCRIPTION" type="TileMap" parent="."]
-editor_description = "@TileMap@1058:<TileMap#202903655921>"
+editor_description = "@TileMap@1066:<TileMap#203037873657>"
 visible = false
 format = 2
+metadata/some_meta = 82
 
 [node name="Timer" type="Timer" parent="."]
 
 [node name="TimerDESCRIPTION" type="Timer" parent="."]
-editor_description = "@Timer@1060:<Timer#202987542006>"
+editor_description = "@Timer@1068:<Timer#203121759742>"
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="."]
 visible = false
 
 [node name="TouchScreenButtonDESCRIPTION" type="TouchScreenButton" parent="."]
-editor_description = "@TouchScreenButton@1062:<TouchScreenButton#203071428091>"
+editor_description = "@TouchScreenButton@1070:<TouchScreenButton#203205645827>"
 visible = false
 
 [node name="Tree" type="Tree" parent="."]
 visible = false
+metadata/some_meta = 8
 
 [node name="TreeDESCRIPTION" type="Tree" parent="."]
-editor_description = "@Tree@1121:<Tree#204648486487>"
+editor_description = "@Tree@1129:<Tree#204782704223>"
 visible = false
+metadata/some_meta = 11
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 visible = false
 
 [node name="VBoxContainerDESCRIPTION" type="VBoxContainer" parent="."]
-editor_description = "@VBoxContainer@1123:<VBoxContainer#205487347336>"
+editor_description = "@VBoxContainer@1131:<VBoxContainer#205621565072>"
 visible = false
 
 [node name="VFlowContainer" type="VFlowContainer" parent="."]
 visible = false
 
 [node name="VFlowContainerDESCRIPTION" type="VFlowContainer" parent="."]
-editor_description = "@VFlowContainer@1125:<VFlowContainer#205588010638>"
+editor_description = "@VFlowContainer@1133:<VFlowContainer#205722228374>"
 visible = false
 
 [node name="VScrollBar" type="VScrollBar" parent="."]
 visible = false
+metadata/some_meta = 33
 
 [node name="VScrollBarDESCRIPTION" type="VScrollBar" parent="."]
-editor_description = "@VScrollBar@1127:<VScrollBar#205688673940>"
+editor_description = "@VScrollBar@1135:<VScrollBar#205822891676>"
 visible = false
+metadata/some_meta = 36
 
 [node name="VSeparator" type="VSeparator" parent="."]
 visible = false
 
 [node name="VSeparatorDESCRIPTION" type="VSeparator" parent="."]
-editor_description = "@VSeparator@1129:<VSeparator#205789337242>"
+editor_description = "@VSeparator@1137:<VSeparator#205923554978>"
 visible = false
 
 [node name="VSlider" type="VSlider" parent="."]
 visible = false
 
 [node name="VSliderDESCRIPTION" type="VSlider" parent="."]
-editor_description = "@VSlider@1131:<VSlider#205890000544>"
+editor_description = "@VSlider@1139:<VSlider#206024218280>"
 visible = false
 
 [node name="VSplitContainer" type="VSplitContainer" parent="."]
 visible = false
+metadata/some_meta = 100
 
 [node name="VSplitContainerDESCRIPTION" type="VSplitContainer" parent="."]
-editor_description = "@VSplitContainer@1136:<VSplitContainer#206057772714>"
+editor_description = "@VSplitContainer@1144:<VSplitContainer#206191990450>"
 visible = false
+metadata/some_meta = 65
 
 [node name="VehicleBody3D" type="VehicleBody3D" parent="."]
 visible = false
 
 [node name="VehicleBody3DDESCRIPTION" type="VehicleBody3D" parent="."]
-editor_description = "@VehicleBody3D@1138:<VehicleBody3D#206158436016>"
+editor_description = "@VehicleBody3D@1146:<VehicleBody3D#206292653752>"
 visible = false
 
 [node name="VehicleWheel3D" type="VehicleWheel3D" parent="."]
 visible = false
 
 [node name="VehicleWheel3DDESCRIPTION" type="VehicleWheel3D" parent="."]
-editor_description = "@VehicleWheel3D@1140:<VehicleWheel3D#206208767667>"
+editor_description = "@VehicleWheel3D@1148:<VehicleWheel3D#206342985403>"
 visible = false
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
 visible = false
+metadata/some_meta = 18
 
 [node name="VideoStreamPlayerDESCRIPTION" type="VideoStreamPlayer" parent="."]
-editor_description = "@VideoStreamPlayer@1142:<VideoStreamPlayer#206292653752>"
+editor_description = "@VideoStreamPlayer@1150:<VideoStreamPlayer#206426871488>"
 visible = false
+metadata/some_meta = 24
 
 [node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
 visible = false
 
 [node name="VisibleOnScreenEnabler2DDESCRIPTION" type="VisibleOnScreenEnabler2D" parent="."]
-editor_description = "@VisibleOnScreenEnabler2D@1144:<VisibleOnScreenEnabler2D#206359762620>"
+editor_description = "@VisibleOnScreenEnabler2D@1152:<VisibleOnScreenEnabler2D#206493980356>"
 visible = false
 
 [node name="VisibleOnScreenEnabler3D" type="VisibleOnScreenEnabler3D" parent="."]
 visible = false
 
 [node name="VisibleOnScreenEnabler3DDESCRIPTION" type="VisibleOnScreenEnabler3D" parent="."]
-editor_description = "@VisibleOnScreenEnabler3D@1146:<VisibleOnScreenEnabler3D#206410094271>"
+editor_description = "@VisibleOnScreenEnabler3D@1154:<VisibleOnScreenEnabler3D#206544312007>"
 visible = false
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 visible = false
+metadata/some_meta = 86
 
 [node name="VisibleOnScreenNotifier2DDESCRIPTION" type="VisibleOnScreenNotifier2D" parent="."]
-editor_description = "@VisibleOnScreenNotifier2D@1148:<VisibleOnScreenNotifier2D#206460425922>"
+editor_description = "@VisibleOnScreenNotifier2D@1156:<VisibleOnScreenNotifier2D#206594643658>"
 visible = false
+metadata/some_meta = 69
 
 [node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="."]
 visible = false
 
 [node name="VisibleOnScreenNotifier3DDESCRIPTION" type="VisibleOnScreenNotifier3D" parent="."]
-editor_description = "@VisibleOnScreenNotifier3D@1150:<VisibleOnScreenNotifier3D#206510757573>"
+editor_description = "@VisibleOnScreenNotifier3D@1158:<VisibleOnScreenNotifier3D#206644975309>"
 visible = false
 
 [node name="VisualInstance3D" type="VisualInstance3D" parent="."]
@@ -1675,7 +1829,7 @@ process_mode = 0
 process_priority = 0
 process_physics_priority = 0
 process_thread_group = 0
-editor_description = "@VisualInstance3D@1152:<VisualInstance3D#206561089224>"
+editor_description = "@VisualInstance3D@1160:<VisualInstance3D#206695306960>"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 rotation_edit_mode = 0
 rotation_order = 2
@@ -1687,51 +1841,61 @@ script = null
 
 [node name="VoxelGI" type="VoxelGI" parent="."]
 visible = false
+metadata/some_meta = 30
 
 [node name="VoxelGIDESCRIPTION" type="VoxelGI" parent="."]
-editor_description = "@VoxelGI@1154:<VoxelGI#206611420875>"
+editor_description = "@VoxelGI@1162:<VoxelGI#206745638611>"
 visible = false
+metadata/some_meta = 75
 
 [node name="Window" type="Window" parent="."]
 visible = false
 
 [node name="WindowDESCRIPTION" type="Window" parent="."]
-editor_description = "@Window@1156:<Window#206762415828>"
+editor_description = "@Window@1164:<Window#206896633564>"
 visible = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 
 [node name="WorldEnvironmentDESCRIPTION" type="WorldEnvironment" parent="."]
-editor_description = "@WorldEnvironment@1158:<WorldEnvironment#206863079130>"
+editor_description = "@WorldEnvironment@1166:<WorldEnvironment#206997296866>"
 
 [node name="XRAnchor3D" type="XRAnchor3D" parent="."]
 visible = false
+metadata/some_meta = 7
 
 [node name="XRAnchor3DDESCRIPTION" type="XRAnchor3D" parent="."]
-editor_description = "@XRAnchor3D@1160:<XRAnchor3D#206913410781>"
+editor_description = "@XRAnchor3D@1168:<XRAnchor3D#207047628517>"
 visible = false
+metadata/some_meta = 19
 
 [node name="XRCamera3D" type="XRCamera3D" parent="."]
 visible = false
 
 [node name="XRCamera3DDESCRIPTION" type="XRCamera3D" parent="."]
-editor_description = "@XRCamera3D@1162:<XRCamera3D#206997296866>"
+editor_description = "@XRCamera3D@1170:<XRCamera3D#207131514602>"
 visible = false
 
 [node name="XRController3D" type="XRController3D" parent="."]
 visible = false
 
 [node name="XRController3DDESCRIPTION" type="XRController3D" parent="."]
-editor_description = "@XRController3D@1164:<XRController3D#207064405734>"
+editor_description = "@XRController3D@1172:<XRController3D#207198623470>"
 visible = false
 
 [node name="XROrigin3D" type="XROrigin3D" parent="."]
 visible = false
+metadata/some_meta = 11
 
 [node name="XROrigin3DDESCRIPTION" type="XROrigin3D" parent="."]
-editor_description = "@XROrigin3D@1166:<XROrigin3D#207114737385>"
+editor_description = "@XROrigin3D@1174:<XROrigin3D#207248955121>"
 visible = false
+metadata/some_meta = 18
 
+[connection signal="ready" from="Node3" to="Node3" method="can_process"]
+[connection signal="ready" from="Node4" to="Node4" method="can_process"]
+[connection signal="ready" from="Node7" to="Node7" method="can_process"]
+[connection signal="ready" from="Node8" to="Node8" method="can_process"]
 [connection signal="ready" from="AcceptDialog" to="AcceptDialog" method="can_process"]
 [connection signal="ready" from="AcceptDialogDESCRIPTION" to="AcceptDialogDESCRIPTION" method="can_process"]
 [connection signal="ready" from="AnimatableBody3D" to="AnimatableBody3D" method="can_process"]
