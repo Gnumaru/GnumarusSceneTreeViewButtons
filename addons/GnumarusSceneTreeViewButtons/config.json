@@ -1,1 +1,7 @@
-{}
+{
+	"popups_block_input_on_main_window":true,
+	"show_only_relevant_connections":true,
+	"show_only_relevant_metadata":true,
+	"always_update":true,
+	"update_frequency_milliseconds":500
+}

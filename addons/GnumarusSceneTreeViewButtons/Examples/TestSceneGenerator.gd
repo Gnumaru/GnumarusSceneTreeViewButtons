@@ -1,54 +1,69 @@
+#class_name GnumarusSceneTreeViewButtonsTestSceneGenerator
 extends Node2D
 
 
-func _ready() -> void:
-	var vpar:Node2D = Node2D.new()
-	vpar.visible = false
-	var v:Node
-	var vcnt:int = 0
-	add_child_(vpar, ClassDB.instantiate("Node"), "Node", false, false, false)
-	add_child_(vpar, ClassDB.instantiate("Node"), "Node", true, false, false)
-	add_child_(vpar, ClassDB.instantiate("Node"), "Node", false, true, false)
-	add_child_(vpar, ClassDB.instantiate("Node"), "Node", true, true, false)
-	add_child_(vpar, ClassDB.instantiate("Node"), "Node", false, false, true)
-	add_child_(vpar, ClassDB.instantiate("Node"), "Node", true, false, true)
-	add_child_(vpar, ClassDB.instantiate("Node"), "Node", false, true, true)
-	add_child_(vpar, ClassDB.instantiate("Node"), "Node", true, true, true)
 
-	for i in ClassDB.get_class_list():
-		if i == 'Node' or ClassDB.is_parent_class(i, 'Node'):
-			if not ClassDB.can_instantiate(i):
-				#print('cannot instantiate %s'%i)
+func _ready() -> void:
+	var v_par: Node2D = Node2D.new()
+	v_par.visible = false
+
+	var v_cnt: int = 0
+	add_child_(v_par, ClassDB.instantiate("Node"), "Node", false, false, false)
+	add_child_(v_par, ClassDB.instantiate("Node"), "Node", true, false, false)
+	add_child_(v_par, ClassDB.instantiate("Node"), "Node", false, true, false)
+	add_child_(v_par, ClassDB.instantiate("Node"), "Node", true, true, false)
+	add_child_(v_par, ClassDB.instantiate("Node"), "Node", false, false, true)
+	add_child_(v_par, ClassDB.instantiate("Node"), "Node", true, false, true)
+	add_child_(v_par, ClassDB.instantiate("Node"), "Node", false, true, true)
+	add_child_(v_par, ClassDB.instantiate("Node"), "Node", true, true, true)
+
+	for i_native_class_name in ClassDB.get_class_list():
+		if i_native_class_name == 'Node' or ClassDB.is_parent_class(i_native_class_name, 'Node'):
+			if not ClassDB.can_instantiate(i_native_class_name):
+				#print('cannot instantiate %s'%i_native_class_name)
 				continue
-			v = ClassDB.instantiate(i)
-			var vwithcon:bool = vcnt % 2 == 0
-			var vwithmeta:bool = vcnt % 3 == 0
-			add_child_(vpar, ClassDB.instantiate(i), i, false, vwithcon, vwithmeta)
-			add_child_(vpar, ClassDB.instantiate(i), i+'DESCRIPTION', true, vwithcon, vwithmeta)
-			vcnt += 1
-	var vpack:PackedScene = PackedScene.new()
-	vpack.pack(vpar)
+
+			# var v_node: Node = ClassDB.instantiate(i_native_class_name)
+			var v_with_con: bool = v_cnt % 2 == 0
+			var v_with_meta: bool = v_cnt % 3 == 0
+			add_child_(v_par, ClassDB.instantiate(i_native_class_name), i_native_class_name, false, v_with_con, v_with_meta)
+			add_child_(v_par, ClassDB.instantiate(i_native_class_name), i_native_class_name+'DESCRIPTION', true, v_with_con, v_with_meta)
+			v_cnt += 1
+
+	var v_pack: PackedScene = PackedScene.new()
+	v_pack.pack(v_par)
 	get_script().resource_path.get_base_dir()
-	ResourceSaver.save(vpack, get_script().resource_path.get_base_dir()+'/SceneTreeViewButtonsTest.tscn')
+	ResourceSaver.save(v_pack, get_script().resource_path.get_base_dir()+'/SceneTreeViewButtonsTest.tscn')
+
 	if not Engine.is_editor_hint():
 		get_tree().quit()
+
 	return
 
 
-func add_child_(pparent:Node, pchild:Node, pname:String, pwithdescription:bool, pwithconnection:bool, pwithmeta:bool) -> Node:
-	pparent.add_child(pchild)
-	if is_instance_valid(pparent.owner):
-		pchild.owner = pparent.owner
+
+func add_child_(p_parent: Node, p_child: Node, p_name: String, p_with_description: bool, p_with_connection: bool, p_with_meta: bool) -> Node:
+	p_parent.add_child(p_child)
+
+	if is_instance_valid(p_parent.owner):
+		p_child.owner = p_parent.owner
+
 	else:
-		pchild.owner = pparent
-	if pwithdescription:
-		pchild.editor_description = str(pchild)
-	if pwithconnection:
-		pchild.ready.connect(pchild.can_process, CONNECT_PERSIST)
-	if pwithmeta:
-		pchild.set_meta('some_meta', randi_range(0, 100))
-	if not pname.is_empty():
-		pchild.name = pname
-	if 'visible' in pchild:
-		pchild.visible = false
-	return pchild
+		p_child.owner = p_parent
+
+	if p_with_description:
+		p_child.editor_description = str(p_child)
+
+	if p_with_connection:
+		p_child.ready.connect(p_child.can_process, CONNECT_PERSIST)
+
+	if p_with_meta:
+		p_child.set_meta('some_meta', randi_range(0, 100))
+
+	if not p_name.is_empty():
+		p_child.name = p_name
+
+	if 'visible' in p_child:
+		p_child.visible = false
+
+	return p_child
